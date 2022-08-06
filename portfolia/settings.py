@@ -15,17 +15,16 @@ from pathlib import Path
 from decouple import config
 
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('DJANGO_SECRET_KEY', default='django-insecure-wxf@fegbbw6)f@-2w(as)9jkhcl1i@sk4xl8hk7+!9sq@=y^t')
+SECRET_KEY = config('DJANGO_SECRET_KEY',
+                    default='django-insecure-wxf@fegbbw6)f@-2w(as)9jkhcl1i@sk4xl8hk7+!9sq@=y^t')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DJANGO_DEBUG', default=True, cast=bool)
@@ -132,3 +131,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+"import django_heroku"
+"django_heroku.settings(locals())" 
