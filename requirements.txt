@@ -20,7 +20,7 @@ pathspec==0.9.0
 platformdirs==2.5.2
 psycopg2==2.9.3
 pycodestyle==2.8.0
-pypiwin32==223
+
 python-dateutil==2.8.2
 python-decouple==3.6
 
