@@ -160,13 +160,8 @@ class HerokuDiscoverRunner(DiscoverRunner):
         return super(HerokuDiscoverRunner, self).setup_databases(**kwargs)
 
 
-# Use HerokuDiscoverRunner on Heroku CI
-if "CI" in os.environ:
-    TEST_RUNNER = "gettingstarted.settings.HerokuDiscoverRunner"
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 "import django_heroku"
 "django_heroku.settings(locals())"
