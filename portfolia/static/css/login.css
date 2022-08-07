@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.signup-link{
+    font-size: 14px;
+    color: #FF7B01;
+
+}
+.logo{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    position: relative;
+}
+  
+.back-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7B01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.back-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.signup-link {
+    display: inline-block;
+    position: relative;
+}
+  
+.signup-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7B01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.signup-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#header{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+form:before { 
+    content:''; 
+    position:absolute; 
+    background: #2E2E2E; 
+    width:1px; 
+    height:73%;
+    margin: 0 auto; 
+    left:0; 
+    right:0; 
+}
+
+span { position: absolute; 
+    right: 0; 
+    top: 34%; 
+    background: white; 
+    left: 0; 
+    margin: 0 auto; 
+    text-align: center;
+    width: 20px; 
+    height: 25px; 
+}
+
+form{
+    /* width: 366px; */
+    width: 38.5%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input{
+    width: 100%;
+    padding: 20px;
+    height: 54px;
+    border: 1px solid #C5CDCB;
+}
+
+.btn-container{
+    /* width: 366px; */
+    width: 38.5%;
+}
+button{
+    font-weight: 600;
+    height: 54px;
+    /* left: 681px;
+    top: 426px; */
+    border-radius: 8px;
+    padding: 20px, 73.5px;
+    border-color: #2E2E2E;
+    width: 100%;
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #E1E1E1;
+}
+
+button img{
+    vertical-align: middle;
+}
+
+.google-btn img{
+    margin-right: 47.5px;
+}
+
+.facebook-btn img{
+    margin-right: 30px;
+}
+
+input[type="password"], input[type="email"]{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+    background-color: #FF7B01;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    height: 54px;
+}
+input[type="submit"]:hover{
+    background-color: #e98120e2;
+    cursor: pointer;
+}
+
+label{
+    font-weight: 500;
+}
+
+.gbtn-container{
+    margin-top: 45px;
+   
+}
+
+.fbtn-container{
+    margin-top: 35px;
+}
+
+.cant-login{
+    width: 10%;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 600;
+    color:#FF7B01;
+}
+
+.captcha{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #454545
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .form-container{
+        flex-direction: column;
+        width: 60%;
+    }
+    form{
+        width: 100%;
+    }
+
+    .btn-container{
+        width: 100%;
+    }
+
+    .vertical-line1:before { 
+        content:''; 
+        position:absolute; 
+        background: #2E2E2E; 
+        width:100%; 
+        height:1px;
+        margin: 0 auto; 
+        left:0; 
+        right:0; 
+    }
+    
+    span { position: absolute; 
+        right: 0; 
+        top: 57%; 
+        background: white; 
+        left: 0; 
+        margin: 0 auto; 
+        text-align: center;
+        width: 25px; 
+        height: 20px; 
+    }
+
+    .cant-login{
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .google-btn img{
+        margin-right: 30px; 
+    }
+    
+    .facebook-btn img{
+        margin-right: 10px;
+    }
+
+    .form-container{
+        width: 70%;
+    }
+    .captcha{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .form-container{
+        width: 80%;
+    }
+
+    .cant-login{
+        width: 40%;
+    }
+    .captcha{
+        width: 70%;
+    }
+}

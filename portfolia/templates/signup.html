@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" type= "text/css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="index.html" class="back-link"><img src="images/back_icon.svg" alt="back_icon"></a>
+            <a href="login.html" class="login-link">Log In</a>
+        </div>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="images/logo.svg" alt="portfolia logo">
+        </div>
+
+        <h3 id="header">Create Your Account</h3>
+
+        <!-- <a href="#"><img src="images/google_icon.svg" alt="google-icon"><p>Continue with Google</p></a> -->
+        <div class="gbtn-container">
+            <button class="google-btn" href="#"><img src="images/google_icon.svg" alt="google-icon">Continue with Google</button>
+        </div>
+        
+        <div class="fbtn-container">
+            <button class="facebook-btn" href="#"><img src="images/facebook_icon.svg" alt="facebook-icon">Continue with Facebook</button>
+        </div>
+        <!-- <a href="#" class="facebook-btn"><img src="images/facebook_icon.svg" alt="facebook-icon">Connect with Facebook</a> -->
+       
+
+        <h4 class="">Or</h4>
+
+        <form action="#" method="post">
+
+            <label for="first_name" >First Name</label><br>
+            <input type="text" placeholder="John" name ="first_name" id="first_name" required><br>
+
+            <label for="first_name" >Last Name</label><br>
+            <input type="text" placeholder="Doe" name ="last_name" id="last_name" required><br>
+
+            <label for="email" >Email</label><br>
+            <input type="email" placeholder="name@email.com" name ="email" id="email" required><br>
+
+            <label for="password" >Password</label><br>
+            <input type="password" placeholder="Password" name ="password" id="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required><br>
+
+            <label for="confirm_password" >Confirm Password</label><br>
+            <input type="password" placeholder="Should match password" name ="confirm_password" id="confirm_password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required><br>
+
+            <p class="terms"> By creating an account, you agree to the <a href="#">Terms of service</a> and have read and understood the <a href="#">Privacy Policy</a></p><br>
+
+            <input type="submit" value="Create account">
+
+        </form>
+
+        <p class="captcha">Secure Login with reCAPTCHA subject to <a href="#">Google Terms</a> & <a href="#">Privacy</a> </p>
+
+
+
+    </main>
+</body>
+</html>

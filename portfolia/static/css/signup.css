@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.login-link{
+    font-size: 14px;
+    color: #FF7B01;
+
+}
+
+.back-link {
+    display: inline-block;
+    position: relative;
+}
+  
+.back-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7B01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.back-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.login-link {
+    display: inline-block;
+    position: relative;
+}
+  
+.login-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF7B01;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.login-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logo{
+    width: 15%;
+    /* width: 420px; */
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#header{
+    width: 60%;
+    /* width: 420px; */
+    margin: auto;
+    text-align: center;
+}
+
+.gbtn-container{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 24px;
+    /* width: 366px; */
+    width: 33.5%;
+    
+}
+
+button img{
+    vertical-align: middle;
+}
+
+.google-btn img{
+    margin-right: 47.5px; 
+}
+
+.facebook-btn img{
+    margin-right: 30px;
+}
+
+.fbtn-container{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 48px; previous */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    /* width: 366px; */
+    width: 33.5%;
+  
+}
+
+button{
+    width: 100%;
+    margin: auto;
+    /* padding: 5px; */
+    font-weight: 600;
+    height: 54px;
+    /* left: 681px;
+    top: 426px; */
+    border-radius: 8px;
+    padding: 20px, 73.5px;
+    align-items: center;
+    border-color: #2E2E2E;
+
+
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #E1E1E1;
+}
+
+h4{
+    font-weight: 400;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 33.5%;
+    /* width: 366px; */
+    margin: auto;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    /* padding: 5px; */
+    padding: 20px;
+    border: 1px solid #C5CDCB;
+    border-radius: 5px;
+    height: 54px;
+}
+
+label{
+    font-weight: 500;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+    margin-bottom: 10px;
+}
+
+.terms{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #A2A2A2;
+}
+
+.terms a{
+    color: #A2A2A2;
+}
+
+.terms a:hover{
+    color: #FF7B01;
+}
+
+
+input[type="submit"]{
+    background-color: #FF7B01;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #e98120e2;
+    cursor: pointer;
+}
+.captcha{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #454545;
+}
+
+.captcha a{
+    color: #454545;
+}
+
+.captcha a:hover{
+    color: #FF7B01;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+.logo{
+    width: 30%;
+}
+.gbtn-container, .fbtn-container{
+    width: 40%;
+}
+
+form{
+    width: 40%;
+}
+
+}
+
+@media only screen and (max-width: 598px) {
+    .gbtn-container, .fbtn-container{
+        width: 50%;
+    }
+    
+    form{
+        width: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+    .gbtn-container, .fbtn-container{
+        width: 60%;
+    }
+    
+    form{
+        width: 60%;
+    }
+    
+    .google-btn img{
+        margin-right: 40px; 
+    }
+    
+    .facebook-btn img{
+        margin-right: 20px;
+    }
+
+}
+@media only screen and (max-width: 380px) {
+    .logo{
+        width: 100%;
+    }
+    #header{
+        width: 100%;
+    }
+    .gbtn-container, .fbtn-container{
+        width: 75%;
+    }
+    
+    form{
+        width: 75%;
+    }
+    .google-btn img{
+        margin-right: 30px; 
+    }
+    
+    .facebook-btn img{
+        margin-right: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 280px) {
+    .google-btn img{
+        margin-right: 25px; 
+    }
+    
+    .facebook-btn img{
+        margin-right: 5px;
+    }
+
+    button{
+        font-size: 12px;
+    }
+
+    label{
+        font-size: 12px;
+    }
+    .terms{
+        font-size: 12px;
+    }
+    .captcha{
+        font-size: 12px;
+    }
+}
