@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+}
+.sign-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    cursor: pointer;
+}
+.logo p{
+    display: inline-block;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 2px solid #3876D0;
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+    padding-top: 6px;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.8182px;
+    line-height: 33px;
+    color: #3876D0;
+}
+.logo h1 {
+    display: inline-block;
+    margin: 0px;
+
+    width: 107px;
+    left: 57px;
+    top: 3px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #3876D0;
+}
+nav a {
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+i {
+    border-bottom: 3px solid #2C453F;
+    border-right: 3px solid #2C453F;
+    display:inline-block;
+    transform: rotate(45deg);
+    padding: 3px;
+    margin: 2px 6px;
+    cursor: pointer;
+}
+nav ul li{
+    padding: 0 10px;
+}
+nav ul li:first-child a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+
+    display: flex;
+    align-items: center;
+
+    color: #2C453F;
+
+}
+nav ul li:nth-child(2) a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    align-items: center;
+    color: #2C453F;
+
+}
+nav ul li:nth-child(3) a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    align-items: center;
+    color: #2C453F;
+}
+nav ul li:nth-child(4) a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    align-items: center;
+    color: #2C453F;
+}
+.sign-up h1:first-child{
+    margin: 0px 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: underline;
+    text-underline-position: under;
+
+    display: flex;
+    align-items: center;
+
+    color: #3876D0;
+}
+.sign-up h1:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    gap: 10px;
+    background: #3876D0;
+    border-radius: 4px;
+
+}
+.sign-up h1:nth-child(2) a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0px 2px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
