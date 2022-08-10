@@ -5,6 +5,6 @@ github username: @Abbyfade
 slack username: @Abby_fade
 
 ## contributions
-* website header and footer
+* Worked on website header and footer
 https://github.com/zuri-training/portfolia/tree/main/header%20and%20footer
 * 
