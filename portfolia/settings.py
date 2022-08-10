@@ -46,7 +46,6 @@ INSTALLED_APPS = [
 
     #local apps
 
-    'landing_page',
     'dashboard',
     'accounts.apps.AccountsConfig',
 
