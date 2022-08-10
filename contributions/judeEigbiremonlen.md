@@ -1,6 +1,7 @@
-#[Project team: project team 12](https://github.com/zuri-training/portfolia)
+## Project team: project team 12
+https://github.com/orgs/zuri-training/projects/291/views/1
 
-##github username: @juddee slack username: Juddee
+github username: @juddee slack username: Juddee
 
 ##contributions
-- [Dashboard](https://github.com/zuri-training/portfolia/pull/13)
+* [Dashboard](https://github.com/zuri-training/portfolia/pull/13)
