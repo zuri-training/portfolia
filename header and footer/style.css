@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,38 +20,8 @@ header {
 }
 .logo {
     cursor: pointer;
-}
-.logo p{
     display: inline-block;
-    margin: 0px;
-    box-sizing: border-box;
-    border: 2px solid #3876D0;
-    border-radius: 50%;
-
-    width: 45px;
-    height: 45px;
-    padding-top: 6px;
-
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 21.8182px;
-    line-height: 33px;
-    color: #3876D0;
-}
-.logo h1 {
-    display: inline-block;
-    margin: 0px;
-
-    width: 107px;
-    left: 57px;
-    top: 3px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-
-    color: #3876D0;
+    width: 140px;
 }
 nav a {
     text-decoration: none;
@@ -61,27 +32,16 @@ nav ul {
     align-items: center;
     list-style: none;
 }
-i {
-    border-bottom: 3px solid #2C453F;
-    border-right: 3px solid #2C453F;
-    display:inline-block;
-    transform: rotate(45deg);
-    padding: 3px;
-    margin: 2px 6px;
-    cursor: pointer;
-}
 nav ul li{
     padding: 0 10px;
+    display: flex;
+    flex-direction: row;
 }
 nav ul li:first-child a{
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
-
-    display: flex;
-    align-items: center;
-
     color: #2C453F;
 
 }
@@ -109,6 +69,13 @@ nav ul li:nth-child(4) a {
     line-height: 36px;
     align-items: center;
     color: #2C453F;
+}
+.down {
+    display: inline-block;
+    color: #2C453F;
+    align-items: center;
+    width: 18px;
+    cursor: pointer;
 }
 .sign-up h1:first-child{
     margin: 0px 10px;
@@ -144,4 +111,71 @@ nav ul li:nth-child(4) a {
 
     color: #FFFFFF;
     text-decoration: none;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 3%;
+    font-family: "Poppins", sans-serif;
+    background: #3876D0;
+    color: #F2F2F2;
+}
+footer a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #F2F2F2;
+}
+.footer-container1 .logo-white{
+    display: inline-block;
+    width: 162px;
+}
+.footer-container1 h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F2F2F2;
+}
+footer h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 15px;
+}
+.footer-container1 h1 img{
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 3px;
+}
+.footer-container2{
+    width: 252px;
+    height: 222px;
+}
+.footer-container3{
+    width: 222px;
+    height: 366px;
+}
+.footer-container4{
+    width: 212px;
+    height: 320px;
+}
+.footer-container5{
+    width: 148px;
+    height: 252px;
+}
+.socials {
+    width: 16px;
+    padding-right: 3px;
 }

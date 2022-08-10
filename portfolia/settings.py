@@ -52,11 +52,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #local apps
+
     'dashboard',
+    'accounts.apps.AccountsConfig',
+
     # Third-party apps
     'django_extensions',
 
 ]
+
+#Authentication
+AUTH_USER_MODEL = "accounts.CustomUser"
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
