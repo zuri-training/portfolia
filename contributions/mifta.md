@@ -7,5 +7,5 @@ github username: @miftahuljna127
 slack username: Mifta
 
 ## contributions
-* Worked on website Landing Page Portfolia https://github.com/zuri-training/portfolia/issues/2
+* Worked on website Landing Page Portfolia https://github.com/zuri-training/portfolia/tree/main/landing_page
 * 
