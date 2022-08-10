@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #local apps
+
     'dashboard',
-    'accounts',
+    'accounts.apps.AccountsConfig',
 
     # Third-party apps
     'django_extensions',
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
 
 #Authentication
 AUTH_USER_MODEL = "accounts.CustomUser"
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
