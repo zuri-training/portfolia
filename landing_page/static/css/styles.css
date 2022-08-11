@@ -1,0 +1,825 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ======================== Base Style ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --clr-white: #FFFFFF;
+  --clr-white-gray: #F2F2F2;
+  --clr-primary-blue: #3876D0;
+  --clr-gray: #737B7D;
+  --clr-dark: #373F41;
+  --clr-black: #252529;
+  
+  /* Font-family */
+  --font-poppins: 'Poppins', sans-serif;
+  
+  /* Font-weight */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* Font size */
+  --fs-72px: 4.5rem;
+  --fs-48px: 3rem;
+  --fs-40px: 2.5rem;
+  --fs-32px: 2rem;
+  --fs-28px: 1.75rem;
+  --fs-24px: 1.5rem;
+  --fs-20px: 1.25rem;
+  --fs-18px: 1.125rem;
+  --fs-16px: 1rem;
+  --fs-14px: 0.875rem;
+}
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+  font-family: var(--font-poppins);
+  font-size: var(--fs-24px);
+  background-color: var(--clr-white-gray);
+}
+
+/* .container {
+  width: 1200px;
+  margin: auto;
+} */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pfl-btn {
+  padding: 1rem 2rem;
+  font-size: var(--fs-20px);
+  font-weight: var(--fw-600);
+  border-radius: 4px;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .main-content {
+    padding-top: 7rem;
+  }
+} */
+/* ======================== Header ============================== */
+/* .container-xxl {
+  width: 1300px;
+  margin: 0 auto;
+} */
+
+.navbar {
+  background-color: var(--clr-white);
+}
+
+.navbar-brand .portfolia-logo-mobile {
+  display: none;
+}
+
+.nav-link {
+  color: var(--clr-dark);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-18px);
+}
+
+.nav-link:active {
+  font-weight: var(--fw-600);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.pfl-btn-primary {
+  background-color: var(--clr-primary-blue);
+  color: var(--clr-white);
+  border-radius: 4px;
+}
+
+.pfl-btn-secondary {
+  color: var(--clr-gray);
+  text-decoration: underline;
+}
+
+/* ======================== Homepage Hero ============================== */
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: var(--fs-72px);
+  color: var(--clr-primary-blue);
+  font-weight: var(--fw-600);
+}
+
+.hero p {
+  color: var(--clr-gray);
+  font-weight: var(--fw-500);
+}
+
+.pfl-btn-link {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  font-weight: var(--fw-700);
+  padding: 1rem 4.3rem;
+}
+
+/* ======================== Company support ============================== */
+.company-support {
+  background-color: var(--clr-primary-blue);
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.wrapper-company {
+  background-color: var(--clr-primary-blue);
+  width: 100%;
+}
+
+.pfl-support_logo-wrapper {
+  padding: .5rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.pfl-support_logo-wrapper img {
+  width: 160px;
+}
+
+/* ======================== Why Choose Us ============================== */
+.why-choose-us {
+  margin: 1rem 0;
+  min-height: 80vh;
+}
+
+.pfl-why-choose_image-wrapper {
+  width: 100%;
+}
+
+.pfl-why-choose_image-wrapper .card-img-top {
+  width: 150px;
+}
+
+.pfl-card-title {
+  font-size: var(--fs-28px);
+}
+
+.pfl-card-text {
+  color: var(--clr-gray);
+  font-size: var(--fs-20px);
+}
+
+/* ======================== Choose Templates ============================== */
+.choose-templates {
+  min-height: 100vh;
+  background-color: var(--clr-primary-blue);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--clr-white-gray);
+}
+
+.pfl-templates-detail {
+  color: var(--clr-white-gray);
+  margin-bottom: 4.5rem;
+}
+
+.pfl-section-title {
+  color: var(--clr-white-gray);
+  line-height: 3.5rem;
+}
+
+.pfl-templates-link {
+  color: var(--clr-white-gray);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+
+
+/* .dynamic-swiper {
+  position: relative;
+} */
+
+/* .templates-card {
+  background-color: var(--clr-white);
+  border: none;
+} */
+
+/* .templates-card__image {
+  width: 70%;
+} */
+
+
+/* ======================== How to create ============================== */
+.how-to-create {
+  min-height: 40vh;
+  background-color: var(--clr-primary-blue);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.how-to__item {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  color: var(--clr-white-gray);
+}
+
+.how-to__item span {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-28px);
+}
+
+.how-to__item p {
+  font-weight: var(--fw-500);
+  font-size: var(--fs-24px);
+}
+
+.how-to-create .text-left {
+  display: none;
+}
+
+/* ======================== Newsletter ============================== */
+.newsletter {
+  min-height: 40vh;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.newsletter__title {
+  font-size: var(--fs-40px);
+  color: var(--clr-primary-blue);
+  font-weight: var(--fw-500);
+}
+
+.newsletter__subtitle {
+  font-size: var(--fs-24px);
+  color: var(--clr-gray);
+  font-weight: var(--fw-400);
+}
+
+.newletter__content > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+}
+
+.newsletter__input > input {
+  background: var(--clr-white-gray);
+  width: 45%;
+  padding: 1rem;
+  border-radius: .4rem;
+  border: 1px solid var(--clr-primary-blue);
+  outline: var(--clr-primary-blue);
+  color: var(--clr-gray);
+}
+
+.pfl-btn-newslatter {
+  background-color: var(--clr-primary-blue);
+  padding: .8rem 8rem;
+  border: none;
+  color: var(--clr-white-gray);
+}
+
+/* ======================== Footer ============================== */
+.footer {
+  background-color: var(--clr-primary-blue);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  color: var(--clr-white-gray);
+}
+
+.footer h3 {
+  color: var(--clr-white-gray);
+  font-size: var(--fs-24px);
+  font-weight: var(--fw-500);
+  margin-bottom: 1.5rem;
+}
+
+.footer ul{
+  padding: 0;
+}
+
+.footer li {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.footer .dropdown-language .nav-link {
+  color: var(--clr-white-gray);
+}
+
+.footer ul .footer__link {
+  color: var(--clr-white-gray);
+  font-size: var(--fs-18px);
+  font-weight: var(--fw-500);
+}
+
+.footer a img {
+  margin-right: .5rem;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  /* ======================== Navbar ============================== */
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar-brand .portfolia-logo-mobile {
+    display: none;
+  }
+
+  .navbar-menu .nav-item {
+    margin-top: .8rem;
+  }
+  
+  .navbar-btns .nav-item {
+    margin-top: 1rem;
+  }
+
+  .navbar .navbar-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+  }
+
+  /* ======================== Homepage Hero ============================== */
+  .main-content {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .text-hero {
+    order: 1;
+  }
+  
+  .img-hero img {
+    order: 0;
+    margin-top: 1rem;
+    width: 500px;
+  }
+
+  .hero h1 {
+    margin-top: 2rem;
+    font-size: var(--fs-40px);
+  }
+  
+  .hero p {
+    font-size: var(--fs-20px);
+    line-height: 1.8rem;
+  }
+
+  .text-left {
+    margin-top: 2rem;
+  }
+
+  /* ======================== Company Support ============================== */
+  .company-support {
+    margin-top: 5rem;
+  }
+
+  .card-body {
+    text-align: left;
+  }
+
+  .pfl-card-title {
+    font-size: var(--fs-24px);
+    color: var(--clr-primary-blue);
+  }
+  
+  .pfl-card-text {
+    font-size: var(--fs-18px);
+  }
+
+  /* ======================== How To Create ============================== */
+  .how-to-create .pfl-section-title{
+    margin: 0 auto;
+  }
+
+  .how-to__detail {
+    margin: 2rem 0 0 0;
+  }
+
+  .how-to__item {
+    text-align: left;
+  }
+
+  .how-to__item span {
+    font-size: var(--fs-24px);
+  }
+  
+  .how-to__item p {
+    font-size: var(--fs-18px);
+  }
+
+  /* ======================== Newsletter ============================== */
+  .newsletter__title {
+    font-size: var(--fs-24px);
+  }
+  
+  .newsletter__subtitle {
+    font-size: var(--fs-18px);
+  }
+
+  .newsletter__input > input {
+    background: var(--clr-white-gray);
+    width: 100%;
+    padding: .5rem;
+    font-size: var(--fs-16px);
+  }
+  
+  .pfl-btn-newslatter {
+    background-color: var(--clr-primary-blue);
+    padding: .5rem 1rem;
+    width: 100%;
+    border: none;
+    color: var(--clr-white-gray);
+    font-size: var(--fs-16px);
+  }
+
+  /* ======================== Newsletter ============================== */
+  .portfolia-footer {
+    flex: 0 0 100%;
+  }
+
+  .why-portfolia-footer {
+    flex: 0 0 33%;
+  }
+
+  .about-portfolia-footer {
+    flex: 0 0 33%;
+  }
+
+  .resources-footer {
+    flex: 0 0 33%;
+  }
+
+  .social-media {
+    flex: 0 0 100%;
+  }
+
+  .footer h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: var(--fs-20px);
+  }
+
+  .footer li {
+    margin-top: .3rem;
+    margin-bottom: .2rem;
+  }
+
+  .footer ul .footer__link {
+    color: var(--clr-white-gray);
+    font-size: var(--fs-16px);
+  }
+
+  .footer .social-media ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* ======================== Navbar ============================== */
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar-brand .portfolia-logo-mobile {
+    display: none;
+  }
+
+  /* ======================== Homepage Hero ============================== */
+  .main-content {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .text-hero {
+    order: 1;
+  }
+  
+  .img-hero img {
+    order: 0;
+    margin-top: 1rem;
+    width: 500px;
+  }
+
+  .hero h1 {
+    margin-top: 2rem;
+    font-size: var(--fs-40px);
+  }
+  
+  .hero p {
+    font-size: var(--fs-20px);
+    line-height: 1.8rem;
+  }
+
+  .text-left {
+    margin-top: 2rem;
+  }
+
+  /* ======================== Company Support ============================== */
+  .company-support {
+    margin-top: 5rem;
+  }
+
+  .card-body {
+    text-align: left;
+  }
+
+  .pfl-card-title {
+    font-size: var(--fs-24px);
+    color: var(--clr-primary-blue);
+  }
+  
+  .pfl-card-text {
+    font-size: var(--fs-18px);
+  }
+
+  /* ======================== How To Create ============================== */
+  .how-to-create .pfl-section-title{
+    margin: 0 auto;
+  }
+
+  .how-to__detail {
+    margin: 2rem 0 0 0;
+  }
+
+  .how-to__item {
+    text-align: left;
+  }
+
+  .how-to__item span {
+    font-size: var(--fs-24px);
+  }
+  
+  .how-to__item p {
+    font-size: var(--fs-18px);
+  }
+
+  /* ======================== Newsletter ============================== */
+  .newsletter__title {
+    font-size: var(--fs-24px);
+  }
+  
+  .newsletter__subtitle {
+    font-size: var(--fs-18px);
+  }
+
+  .newsletter__input > input {
+    background: var(--clr-white-gray);
+    width: 100%;
+    padding: .5rem;
+    font-size: var(--fs-16px);
+  }
+  
+  .pfl-btn-newslatter {
+    background-color: var(--clr-primary-blue);
+    padding: .5rem 1rem;
+    width: 100%;
+    border: none;
+    color: var(--clr-white-gray);
+    font-size: var(--fs-16px);
+  }
+
+  /* ======================== Newsletter ============================== */
+  .portfolia-footer {
+    flex: 0 0 100%;
+  }
+
+  .why-portfolia-footer {
+    flex: 0 0 100%;
+  }
+
+  .about-portfolia-footer {
+    flex: 0 0 50%;
+  }
+
+  .resources-footer {
+    flex: 0 0 50%;
+  }
+
+  .social-media {
+    flex: 0 0 100%;
+  }
+
+    .footer h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: var(--fs-20px);
+  }
+
+  .footer li {
+    margin-top: .3rem;
+    margin-bottom: .2rem;
+  }
+
+  .footer ul .footer__link {
+    color: var(--clr-white-gray);
+    font-size: var(--fs-16px);
+  }
+
+  .footer .social-media ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  /* ======================== Navbar ============================== */
+  .main-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .text-hero {
+    order: 1;
+  }
+
+  .img-hero {
+    order: 0;
+  }
+
+  .hero h1 {
+    margin-top: 2rem;
+    font-size: var(--fs-32px);
+  }
+  
+  .hero p {
+    font-size: var(--fs-16px);
+    line-height: 1.8rem;
+  }
+
+  /* ======================== Company Support ============================== */
+  .company-support {
+    margin-top: 3.5rem;
+  }
+
+  /* ======================== Why Choose Us ============================== */
+  .why-choose-us {
+    margin-bottom: 9rem;
+  }
+
+  /* ======================== How to create ============================== */
+  .how-to-create {
+    background-color: var(--clr-white-gray);
+  }
+
+  .how-to-create .pfl-section-title{
+    color: var(--clr-dark);
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.8rem;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-20px);
+  }
+
+  .how-to__detail {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .how-to-create .pfl-templates-link {
+    display: none;
+  }
+
+  .how-to__item span {
+    font-size: var(--fs-20px);
+    color: var(--clr-primary-blue);
+  }
+  
+  .how-to__item p {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-16px);
+    color: var(--clr-primary-blue);
+  }
+
+  .how-to-create .text-left {
+    display: inline-block;
+  } 
+
+  .how-to-create .pfl-btn-link {
+    padding: .6rem 3.6rem;
+    font-size: var(--fs-14px);
+  }
+
+  /* ======================== Newsletter ============================== */
+  .newsletter__title {
+    font-size: var(--fs-20px);
+    font-weight: var(--fw-600);
+  }
+  
+  .newsletter__subtitle {
+    font-size: var(--fs-16px);
+    text-align: left;
+  }
+
+  .newsletter__input > input {
+    background: var(--clr-white-gray);
+    width: 100%;
+    padding: .5rem;
+    font-size: var(--fs-16px);
+  }
+  
+  .pfl-btn-newslatter {
+    background-color: var(--clr-primary-blue);
+    padding: .8rem 0;
+    font-size: var(--fs-16px);
+    font-weight: var(--fw-400);
+    width: 100%;
+  }
+
+    /* ======================== Footer  ============================== */
+    .footer .row {
+      display: flex;
+    }
+
+    .portfolia-footer {
+      flex: 0 0 100%;
+    }
+
+    .why-portfolia-footer {
+      flex: 0 0 100%;
+    }
+
+    .about-portfolia-footer {
+      flex: 0 0 100%;
+    }
+
+    .resources-footer {
+      flex: 0 0 100%;
+    }
+
+    .social-media {
+      flex: 0 0 100%;
+    }
+
+    .footer h3 {
+      font-size: var(--fs-18px);
+    }
+  
+    .footer li {
+      margin-top: .3rem;
+      margin-bottom: .2rem;
+    }
+  
+    .footer ul .footer__link {
+      color: var(--clr-white-gray);
+      font-size: var(--fs-16px);
+    }
+  
+    .footer .social-media ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  /* ======================== Footer  ============================== */
+
+
+  /* ======================== Navbar ============================== */
+
+}
+
+
+
+.header {
+  width: 100%;
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+}
