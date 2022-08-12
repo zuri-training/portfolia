@@ -71,7 +71,7 @@
     top: 0px;
     bottom: 0;
     z-index:2;
-    background: #FBFDFD;
+    background: #fff;
     display: none;
 }
 .dashboard-container .right-section{
@@ -287,9 +287,11 @@
     text-decoration: none;
     width: 173px;
     height: 40px;
-    background: #FFE5CC;
-    color: #4F5251;
-    border: 1px solid #9EA4A3;
+    /* background: #FFE5CC; */
+    background: #3876D0;
+    color: #F2F2F2;
+    border: 1px solid #3876D0;
+    /* border: 1px solid #9EA4A3; */
     border-radius: 8px;
 }
 .article-section .show-more-btn > a:hover{
@@ -297,7 +299,7 @@
 }
 .article-section .show-more-btn a > i{
     margin-left: 5px;
-    color: #4F5251;
+    color: #F2F2F2;
 }
 i{
     color: #4F5251;

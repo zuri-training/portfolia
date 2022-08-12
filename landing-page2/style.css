@@ -1,0 +1,165 @@
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+ }
+ header{
+    background-color: grey;
+    color: black;
+    height: 60px;
+ }
+ .hero{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+ }
+ .div01{
+    flex: 1;
+ }
+ .div02{
+    flex: 1;
+ }
+ .div03{
+    flex: 1;
+ }
+ .divmain{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    font-size: larger;
+    margin-left: 30px;
+ }
+ .create{
+    margin-left: 10px;
+ }
+ .div1{
+    height: 180px;
+    background-color: blue;
+ }
+ .hh4{
+    text-align: center;
+ }
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+ }
+ .logo{
+    color: rgb(154, 154, 200);
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+ }
+ nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+ nav ul li a:hover{
+    color: blue;
+    transition: 0.3s;
+ }
+ .btn{
+    background-color: rgb(33, 32, 32); 
+    color: white;
+    border: 1.5px solid transparent;
+    padding: 10px 25px;
+    border-radius: 15px;   
+ }
+.btn:hover{
+    transform: scale(1.2);
+}
+.main1{
+    background-color: whitesmoke;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main1 .create{
+   position: relative;
+   max-width: 600px;
+
+}
+.main1 .create h4{
+   font-size: 3em;
+   line-height: 1.2em;
+}
+.main1 .imgbox .imagehero{
+   height: 250px;
+   width: 900px;
+
+}
+.main1 .imgbox{
+   width: 60px;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 50px;
+   height: 200px;
+} 
+h4{
+    font-weight: lighter;
+    font-size: xx-large;
+    font-display: 58px;
+}
+.hh4{
+    font-weight: bold lighter; 
+    font-size: large;
+}
+main{
+    background-color: whitesmoke;
+    height: 1600px;
+    
+}
+.column{
+   display: inline-block;
+   justify-content: space-between;
+   width: 26.5%;
+   height: 70px;
+   float: left;
+   padding: 5px;
+   position: relative;
+   margin-top: 20px;
+   margin-left: 10px;
+}
+.template{
+   background-color: blue;
+   height: 500px;
+   position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.template{
+   height: 350px;
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}   
+.temp1{
+   margin-left: 10px;
+}
+template .export{
+   width: 60px;
+   display: flex;
+   position: relative;
+   padding-right: 50px;
+   height: 200px;
+   float: right;
+}   
