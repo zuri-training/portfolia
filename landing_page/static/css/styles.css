@@ -226,7 +226,6 @@ a {
   text-transform: uppercase;
 }
 
-
 .templates-card__title {
   margin-top: 1.5rem;
 }
@@ -677,6 +676,51 @@ a {
     font-size: var(--fs-18px);
   }
 
+  /* ======================== Choose templates ============================== */
+  .choose-templates .pfl-section-title {
+    color: var(--clr-white-gray);
+    width: 100%;
+    line-height: 1.8rem;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-24px);
+  }
+
+  .slide-container {
+    padding-bottom: 7rem;
+  }
+
+  .pfl-templates-detail p {
+    font-size: var(--fs-20px);
+  }
+
+  .pfl-templates-link {
+    font-size: var(--fs-20px) ;
+  }
+  
+  .templates-card__title {
+    margin-top: 1rem;
+  }
+
+  .swiper-action {
+    margin-top: 3rem;
+    font-size: var(--fs-16px);
+  }
+
+  .swiper-arrows {
+    left: 53%;
+    top: 20px;
+  }
+
+  .swiper-button-next {
+    right: auto;
+    left: 40%;
+  }
+  
+  .swiper-button-prev {
+    left: 10%;
+    right: 70%;  
+  }
+
   /* ======================== Newsletter ============================== */
   .newsletter__title {
     font-size: var(--fs-24px);
@@ -702,7 +746,7 @@ a {
     font-size: var(--fs-16px);
   }
 
-  /* ======================== Newsletter ============================== */
+  /* ======================== Footer ============================== */
   .portfolia-footer {
     flex: 0 0 100%;
   }
@@ -822,6 +866,57 @@ a {
   .how-to-create .pfl-btn-link {
     padding: .6rem 3.6rem;
     font-size: var(--fs-14px);
+  }
+
+  /* ======================== Choose Templates ============================== */
+  .choose-templates .pfl-section-title {
+    color: var(--clr-white-gray);
+    width: 100%;
+    line-height: 1.8rem;
+    font-weight: var(--fw-600);
+    font-size: var(--fs-20px);
+  }
+
+  .slide-container {
+    padding-bottom: 7rem;
+  }
+
+  .pfl-templates-detail {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .pfl-templates-detail p {
+    font-size: var(--fs-18px);
+  }
+
+  .pfl-templates-link {
+    font-size: var(--fs-18px) ;
+  }
+  
+  .templates-card__title {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .swiper-action {
+    margin-top: 3rem;
+    font-size: var(--fs-16px);
+  }
+
+  .swiper-arrows {
+    left: 53%;
+    top: 20px;
+  }
+
+  .swiper-button-next {
+    right: auto;
+    left: 40%;
+  }
+  
+  .swiper-button-prev {
+    left: 10%;
+    right: 70%;  
   }
 
   /* ======================== Newsletter ============================== */
