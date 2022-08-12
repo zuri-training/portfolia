@@ -158,6 +158,10 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolia/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+#to serve media images in development like pictures
+MEDIA_ROOT = BASE_DIR/'static/images'
+MEDIA_URL = '/images/'
+
 # Enable WhiteNoise's GZip compression of static assets.
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
