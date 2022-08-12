@@ -216,19 +216,94 @@ a {
 }
 
 
+.templates-card__title {
+  margin-top: 1.5rem;
+}
 
-/* .dynamic-swiper {
-  position: relative;
-} */
+.slide-container {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--clr-dark); */
+  padding-bottom: 4rem;
+}
 
-/* .templates-card {
-  background-color: var(--clr-white);
+.templates-wrapper {
+  display: flex;
+}
+
+.templates-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 .5rem;
+  justify-content: center;
+  /* background-color: var(--clr-dark); */
+}
+
+.templates-item .card {
+  background-color: transparent;
   border: none;
-} */
+  display: block;
+  margin: auto;
+}
 
-/* .templates-card__image {
-  width: 70%;
-} */
+.templates-card__image {
+  position: relative;
+  max-width: 600px;
+  height: 500px;
+}
+
+.templates-card__image .img-templates {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-action {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-18px);
+  margin: 0 auto;
+}
+
+.swiper-pagination {
+  font-weight: var(--fs-40px);
+  font-family: var(--font-poppins);
+  top: 25px;
+}
+
+.swiper-arrows {
+  text-align: center;
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 53%;
+  top: 23px;
+  text-align: center;
+  margin: 0 .5rem;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "";
+} 
+
+.swiper-button-next {
+  color: var(--clr-white-gray);
+  right: auto;
+  left: 40%;
+
+}
+
+.swiper-button-prev {
+  color: var(--clr-white-gray);
+  left: 10%;
+  right: 70%;  
+}
 
 
 /* ======================== How to create ============================== */
