@@ -72,6 +72,17 @@ a {
   border-radius: 4px;
 }
 
+/* ======================= Scroll Bar ======================= */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #F2F2F2 ;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3876D0;
+  border-radius: .5rem;
+}
+
 /* @media screen and (max-width: 1000px) {
   .main-content {
     padding-top: 7rem;
