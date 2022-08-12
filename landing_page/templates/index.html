@@ -11,7 +11,7 @@
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="../static/css/bootstrap.css">
   <!-- Swiper Js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css" />
   <!-- CSS Style -->
   <link rel="stylesheet" href="../static/css/styles.css">
 
@@ -184,7 +184,7 @@
         </div>
       </div>
     </section>
-    {% comment %} <section class="choose-templates">
+    <section class="choose-templates">
       <div class="container-xxl">
         <div class="row pfl-templates-detail justify-content-between align-items-center">
           <div class="col-lg-5">
@@ -198,42 +198,61 @@
         </div>
         <div class="row">
           <div class="col-lg-10 ms-auto dynamic-swiper">
-            <div class="templates-swiper swiper-container">
-              <div class="swiper-wrapper">
+            <div class="slide-container swiper">
+              <div class="templates-wrapper swiper-wrapper">
                 <div class="templates-item swiper-slide">
-                  <a href="#" class="templates-card">
-                    <div class="card-body">
-                      <div class="templates-card__image">
-                        <img src="../static/img/crimson-image-templates.png" alt="Crimson template image">
-                      </div>
-                      <div class="templates-card__title">
-                        <a href="#" class="pfl-templates-link fw-semibold">Crimson</a>
-                      </div>
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/crimson-image-templates.png" alt="Crimson templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Crimson</a>
                     </div>
                   </a>
                 </div>
                 <div class="templates-item swiper-slide">
-                  <a href="#" class="templates-card">
-                    <div class="card-body">
-                      <div class="templates-card__image">
-                        <img src="../static/img/fortune-image-templates.png" alt="Fortune template image">
-                      </div>
-                      <div class="templates-card__title">
-                        <a href="#" class="pfl-templates-link fw-semibold">Fortune</a>
-                      </div>
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/fortune-image-templates.png" alt="Fortune templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Fortune</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="templates-item swiper-slide">
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/other-image-templates.png" alt="templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Crimson A</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="templates-item swiper-slide">
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/other1-image-templates.png" alt="templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Fortune A</a>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="d-none d-lg-flex justify-content-end mb-3 mr-3">
-                <a href="#" class="pfl-swiper-slider-prev"><i class="fa-solid fa-arrow-left-long"></i></a>
-                <a href="#" class="pfl-swiper-slider-nect"><i class="fa-solid fa-arrow-right-long"></i></a>
+              <div class="swiper-action">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-arrows">
+                  <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                  <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> {% endcomment %}
+    </section>
     <section class="how-to-create">
       <div class="container-xxl">
         <div class="row">
@@ -392,7 +411,7 @@
   <!-- Bootstrap JS -->
   <script src="../static/js/bootstrap-js-popper.js"></script>
   <!-- Swiper Js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../static/js/swiper-bundle.min.js"></script>
   <script src="../static/js/script.js"></script>
 </body>
 
