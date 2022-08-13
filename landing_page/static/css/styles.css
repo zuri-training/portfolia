@@ -134,6 +134,14 @@ a {
   align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    /* padding-top: 5rem; */
+    /* padding-bottom: 5rem; */
+  }
+}
+
 .hero h1 {
   font-size: var(--fs-72px);
   color: var(--clr-primary-blue);
@@ -155,12 +163,17 @@ a {
 /* ======================== Company support ============================== */
 .company-support {
   background-color: var(--clr-primary-blue);
-  min-height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .company-support {
+    min-height: 35vh;
+  }
 }
 
 .wrapper-company {
@@ -180,7 +193,7 @@ a {
 /* ======================== Why Choose Us ============================== */
 .why-choose-us {
   margin: 1rem 0;
-  min-height: 80vh;
+  padding-bottom: 1rem;
 }
 
 .pfl-why-choose_image-wrapper {
