@@ -160,6 +160,10 @@ button img{
     margin-right: 30px;
 }
 
+button a{
+    color: black;
+}
+
 input[type="password"], input[type="email"]{
     margin-bottom: 10px;
 }
@@ -233,6 +237,10 @@ label{
         margin: 0 auto; 
         left:0; 
         right:0; 
+    }
+
+    form:before{
+        display: none;
     }
     
     span { position: absolute; 
