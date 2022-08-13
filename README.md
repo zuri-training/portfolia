@@ -8,7 +8,11 @@ Django
 
 ## Change directory to project folder
 
-## Run pip install
+## Create and activate a virtual envitonment
+        run python -m venv env
+        run env\scripts\activate
+
+## Run pip freeze > requirements.txt
 
 
 ## Create .env file
