@@ -129,7 +129,6 @@ a {
 
 /* ======================== Homepage Hero ============================== */
 .hero{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,10 +202,9 @@ a {
 
 /* ======================== Choose Templates ============================== */
 .choose-templates {
-  min-height: 100vh;
   background-color: var(--clr-primary-blue);
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   color: var(--clr-white-gray);
 }
 
@@ -437,7 +435,6 @@ a {
 
 /* ======================== How to create ============================== */
 .how-to-create {
-  min-height: 40vh;
   background-color: var(--clr-primary-blue);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -466,9 +463,8 @@ a {
 
 /* ======================== Newsletter ============================== */
 .newsletter {
-  min-height: 60vh;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -517,7 +513,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
   color: var(--clr-white-gray);
 }
 
@@ -580,7 +575,7 @@ a {
   /* ======================== Homepage Hero ============================== */
   .main-content {
     text-align: center;
-    margin-top: 4rem;
+    /* margin-top: 2rem; */
     margin-bottom: 3rem;
   }
 
@@ -762,8 +757,8 @@ a {
   /* ======================== Homepage Hero ============================== */
   .main-content {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .text-hero {
@@ -971,7 +966,7 @@ a {
 @media screen and (max-width: 576px) {
   /* ======================== Navbar ============================== */
   .main-content {
-    margin-top: 2rem;
+    /* margin-top: 1rem; */
     text-align: center;
   }
 
@@ -984,7 +979,7 @@ a {
   }
 
   .hero h1 {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-size: var(--fs-32px);
   }
   
@@ -994,9 +989,9 @@ a {
   }
 
   /* ======================== Company Support ============================== */
-  .company-support {
-    margin-top: 3.5rem;
-  }
+  /* .company-support {
+    margin-top: 1.5rem;
+  } */
 
   /* ======================== Why Choose Us ============================== */
   .why-choose-us {
