@@ -48,10 +48,17 @@ else:
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #social login apps
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
 
     #local apps
 
@@ -61,6 +68,8 @@ INSTALLED_APPS = [
 
     # Third-party apps
     'django_extensions',
+    
+    
 
 ]
 
@@ -171,3 +180,70 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 "import django_heroku"
 "django_heroku.settings(locals())"
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+SITE_ID = 1
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+       
+        'APP': {
+            'client_id': '55442352359-jhhse5q68f6r49tr1asuf52oslq8n5mh.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        }
+    },
+}
+
+SOCIALACCOUNT_PROVIDERS = {
+     'facebook':
+        {
+         'METHOD': 'oauth2',
+         'SDK_URL': '//connect.facebook.net/{locale}/sdk.js',
+         'SCOPE': ['email', 'public_profile'],
+         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+         'INIT_PARAMS': {'cookie': True},
+         'FIELDS': [
+             'id',
+             'first_name',
+             'last_name',
+             'name',
+             'name_format',
+             'picture',
+             'short_name'
+         ],
+         'EXCHANGE_TOKEN': True,
+         'LOCALE_FUNC': lambda request: 'ru_RU',
+         'VERIFIED_EMAIL': False,
+         'VERSION': 'v7.0',
+         # you should fill in 'APP' only if you don't create a Facebook instance at /admin/socialaccount/socialapp/
+         'APP': {
+             'client_id': '1052740645446667',  # !!! THIS App ID
+             'secret': 'df98dea87955e2416b8f94b309ef3365',  # !!! THIS App Secret
+             'key': ''
+                }
+         }
+}
+
+
+
+
+SOCIALACCOUNT_LOGIN_ON_GET=True
+
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_USERNAME_REQUIRED = False
+
+
+
+LOGIN_REDIRECT_URL = '/dashboard'
+LOGOUT_REDIRECT_URL = '/accounts/login'
+
+#55442352359-jhhse5q68f6r49tr1asuf52oslq8n5mh.apps.googleusercontent.com
+#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
