@@ -83,11 +83,6 @@ a {
   border-radius: .5rem;
 }
 
-/* @media screen and (max-width: 1000px) {
-  .main-content {
-    padding-top: 7rem;
-  }
-} */
 /* ======================== Header ============================== */
 /* .container-xxl {
   width: 1300px;
@@ -129,10 +124,17 @@ a {
 
 /* ======================== Homepage Hero ============================== */
 .hero{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+    /* padding-top: 5rem; */
+    /* padding-bottom: 5rem; */
+  }
 }
 
 .hero h1 {
@@ -156,12 +158,17 @@ a {
 /* ======================== Company support ============================== */
 .company-support {
   background-color: var(--clr-primary-blue);
-  min-height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .company-support {
+    min-height: 35vh;
+  }
 }
 
 .wrapper-company {
@@ -181,7 +188,7 @@ a {
 /* ======================== Why Choose Us ============================== */
 .why-choose-us {
   margin: 1rem 0;
-  min-height: 80vh;
+  padding-bottom: 1rem;
 }
 
 .pfl-why-choose_image-wrapper {
@@ -203,10 +210,9 @@ a {
 
 /* ======================== Choose Templates ============================== */
 .choose-templates {
-  min-height: 100vh;
   background-color: var(--clr-primary-blue);
   padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   color: var(--clr-white-gray);
 }
 
@@ -437,7 +443,6 @@ a {
 
 /* ======================== How to create ============================== */
 .how-to-create {
-  min-height: 40vh;
   background-color: var(--clr-primary-blue);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -466,9 +471,8 @@ a {
 
 /* ======================== Newsletter ============================== */
 .newsletter {
-  min-height: 60vh;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -517,7 +521,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
   color: var(--clr-white-gray);
 }
 
@@ -580,7 +583,7 @@ a {
   /* ======================== Homepage Hero ============================== */
   .main-content {
     text-align: center;
-    margin-top: 4rem;
+    /* margin-top: 2rem; */
     margin-bottom: 3rem;
   }
 
@@ -762,8 +765,8 @@ a {
   /* ======================== Homepage Hero ============================== */
   .main-content {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .text-hero {
@@ -971,7 +974,7 @@ a {
 @media screen and (max-width: 576px) {
   /* ======================== Navbar ============================== */
   .main-content {
-    margin-top: 2rem;
+    /* margin-top: 1rem; */
     text-align: center;
   }
 
@@ -984,7 +987,7 @@ a {
   }
 
   .hero h1 {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-size: var(--fs-32px);
   }
   
@@ -994,9 +997,9 @@ a {
   }
 
   /* ======================== Company Support ============================== */
-  .company-support {
-    margin-top: 3.5rem;
-  }
+  /* .company-support {
+    margin-top: 1.5rem;
+  } */
 
   /* ======================== Why Choose Us ============================== */
   .why-choose-us {
