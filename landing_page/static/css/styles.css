@@ -46,11 +46,6 @@ body {
   background-color: var(--clr-white-gray);
 }
 
-/* .container {
-  width: 1200px;
-  margin: auto;
-} */
-
 img {
   max-width: 100%;
   height: auto;
@@ -93,7 +88,7 @@ a {
   background-color: var(--clr-white);
 }
 
-.navbar-brand .portfolia-logo-mobile {
+.portfolia-logo-mobile {
   display: none;
 }
 
@@ -103,7 +98,7 @@ a {
   font-size: var(--fs-18px);
 }
 
-.nav-link:active {
+.nav-link.active {
   font-weight: var(--fw-600);
 }
 
@@ -129,14 +124,6 @@ a {
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
-  .hero {
-    min-height: 100vh;
-    /* padding-top: 5rem; */
-    /* padding-bottom: 5rem; */
-  }
-}
-
 .hero h1 {
   font-size: var(--fs-72px);
   color: var(--clr-primary-blue);
@@ -146,6 +133,8 @@ a {
 .hero p {
   color: var(--clr-gray);
   font-weight: var(--fw-500);
+  font-size: var(--fs-20px);
+  margin-bottom: 1rem;
 }
 
 .pfl-btn-link {
@@ -163,12 +152,6 @@ a {
   align-items: center;
   margin-top: 0;
   margin-bottom: 2.5rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .company-support {
-    min-height: 35vh;
-  }
 }
 
 .wrapper-company {
@@ -191,6 +174,11 @@ a {
   padding-bottom: 1rem;
 }
 
+.why-choose-us .pfl-section-title {
+  font-size: var(--fs-32px);
+  color: var(--clr-black);
+}
+
 .pfl-why-choose_image-wrapper {
   width: 100%;
 }
@@ -200,12 +188,14 @@ a {
 }
 
 .pfl-card-title {
-  font-size: var(--fs-28px);
+  font-weight: var(--fw-600);
+  margin-top: 1.5rem;
+  font-size: var(--fs-24px);
 }
 
 .pfl-card-text {
   color: var(--clr-gray);
-  font-size: var(--fs-20px);
+  font-size: var(--fs-18px);
 }
 
 /* ======================== Choose Templates ============================== */
@@ -216,6 +206,10 @@ a {
   color: var(--clr-white-gray);
 }
 
+.choose-templates .description {
+  width: 85%;
+}
+
 .pfl-templates-detail {
   color: var(--clr-white-gray);
   margin-bottom: 4.5rem;
@@ -224,6 +218,7 @@ a {
 .pfl-section-title {
   color: var(--clr-white-gray);
   line-height: 3.5rem;
+  font-size: var(--fs-32px);
 }
 
 .pfl-templates-link {
@@ -239,7 +234,6 @@ a {
 .slide-container {
   width: 100%;
   height: 100%;
-  /* background-color: var(--clr-dark); */
   padding-bottom: 4rem;
 }
 
@@ -252,7 +246,6 @@ a {
   flex-direction: column;
   padding: 0 .5rem;
   justify-content: center;
-  /* background-color: var(--clr-dark); */
 }
 
 .templates-item .card {
@@ -312,7 +305,6 @@ a {
   color: var(--clr-white-gray);
   right: auto;
   left: 40%;
-
 }
 
 .choose-templates .swiper-button-prev {
@@ -333,6 +325,7 @@ a {
   color: var(--clr-primary-blue);
   font-weight: var(--fw-600);
   margin-bottom: 2rem;
+  font-size: var(--fs-32px);
 }
 
 .quotes-container {
@@ -440,7 +433,6 @@ a {
   z-index: 20;
 }
 
-
 /* ======================== How to create ============================== */
 .how-to-create {
   background-color: var(--clr-primary-blue);
@@ -448,21 +440,33 @@ a {
   padding-bottom: 1.5rem;
 }
 
+.how-to-create .pfl-section-title {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-32px);
+}
+
 .how-to__item {
   display: flex;
   justify-content: start;
-  gap: 1rem;
+  gap: 2rem;
   color: var(--clr-white-gray);
+}
+
+.how-to__item + .how-to__item {
+  margin-bottom: .5rem;
 }
 
 .how-to__item span {
   font-weight: var(--fw-700);
-  font-size: var(--fs-28px);
+  font-size: var(--fs-24px);
+  width: 14px;
 }
 
 .how-to__item p {
+  margin-top: .1rem;
   font-weight: var(--fw-500);
-  font-size: var(--fs-24px);
+  font-size: var(--fs-20px);
+  margin-bottom: 0;
 }
 
 .how-to-create .text-left {
@@ -478,9 +482,9 @@ a {
 }
 
 .newsletter__title {
-  font-size: var(--fs-40px);
+  font-size: var(--fs-32px);
   color: var(--clr-primary-blue);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
 }
 
 .newsletter__subtitle {
@@ -555,15 +559,29 @@ a {
 }
 
 
+@media screen and (min-width: 1024px) {
+  /* ======================== Homepage Hero ============================== */
+  .hero {
+    min-height: 100vh;
+    /* padding-top: 5rem; */
+    /* padding-bottom: 5rem; */
+  }
+
+  /* ======================== Company Support ============================== */
+  .company-support {
+    min-height: 35vh;
+  }
+
+  .newsletter {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
 
 @media screen and (max-width: 992px) {
   /* ======================== Navbar ============================== */
   .navbar {
     background-color: transparent;
-  }
-
-  .navbar-brand .portfolia-logo-mobile {
-    display: none;
   }
 
   .navbar-menu .nav-item {
@@ -583,7 +601,6 @@ a {
   /* ======================== Homepage Hero ============================== */
   .main-content {
     text-align: center;
-    /* margin-top: 2rem; */
     margin-bottom: 3rem;
   }
 
@@ -627,6 +644,23 @@ a {
   
   .pfl-card-text {
     font-size: var(--fs-18px);
+  }
+
+  /* ======================== Why Choose Us ============================== */
+  .pfl-card-title {
+    font-weight: var(--fw-600);
+    margin-top: 1.5rem;
+    font-size: var(--fs-28px);
+  }
+
+  .pfl-card-text {
+    color: var(--clr-gray);
+    font-size: var(--fs-20px);
+  }
+
+  /* ======================== Choose Templates ============================== */
+  .choose-templates .description {
+    width: 100%;
   }
 
   /* ======================== Quotes Slider ============================== */
@@ -678,7 +712,6 @@ a {
 
   /* ======================== Newsletter ============================== */
   .newsletter {
-    min-height: 40vh;
     justify-content: center;
     align-items: center;
   }
@@ -756,10 +789,6 @@ a {
   /* ======================== Navbar ============================== */
   .navbar {
     background-color: transparent;
-  }
-
-  .navbar-brand .portfolia-logo-mobile {
-    display: none;
   }
 
   /* ======================== Homepage Hero ============================== */
@@ -973,6 +1002,14 @@ a {
 
 @media screen and (max-width: 576px) {
   /* ======================== Navbar ============================== */
+  .portfolia-logo-desktop {
+    display: none;
+  }
+
+  .portfolia-logo-mobile {
+    display: inline;
+  }
+
   .main-content {
     /* margin-top: 1rem; */
     text-align: center;
@@ -996,14 +1033,21 @@ a {
     line-height: 1.8rem;
   }
 
-  /* ======================== Company Support ============================== */
-  /* .company-support {
-    margin-top: 1.5rem;
-  } */
-
   /* ======================== Why Choose Us ============================== */
   .why-choose-us {
     margin-bottom: 9rem;
+  }
+
+  .why-choose-us .pfl-section-title {
+    font-size: var(--fs-24px);
+  }
+
+  .pfl-card-title {
+    font-size: var(--fs-18px);
+  }
+  
+  .pfl-card-text {
+    font-size: var(--fs-16px);
   }
 
   /* ======================== Choose Templates ============================== */
@@ -1012,7 +1056,7 @@ a {
     width: 100%;
     line-height: 1.8rem;
     font-weight: var(--fw-600);
-    font-size: var(--fs-20px);
+    font-size: var(--fs-24px);
   }
 
   .slide-container {
@@ -1073,7 +1117,7 @@ a {
     margin: 0 auto;
     line-height: 1.8rem;
     font-weight: var(--fw-600);
-    font-size: var(--fs-20px);
+    font-size: var(--fs-24px);
   }
 
   .how-to__detail {
@@ -1082,6 +1126,15 @@ a {
 
   .how-to-create .pfl-templates-link {
     display: none;
+  }
+
+  .how-to__item {
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .how-to__item + .how-to__item {
+    margin-bottom: .3rem;
   }
 
   .how-to__item span {
@@ -1108,6 +1161,7 @@ a {
   .newsletter__title {
     font-size: var(--fs-20px);
     font-weight: var(--fw-600);
+    line-height: 1.8rem;
   }
   
   .newsletter__subtitle {
@@ -1173,5 +1227,57 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* ======================== Navbar ============================== */
+  .portfolia-logo-desktop {
+    display: none;
+  }
+
+  .portfolia-logo-mobile {
+    display: inline;
+  }
+
+  .navbar .navbar-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+  }
+
+  /* ======================== Homepage Hero ============================== */
+  .hero p {
+    margin-top: .8rem;
+    line-height: 1.4rem;
+    padding-bottom: .5rem;
+  }
+
+  /* ======================== How to create ============================== */
+  .how-to__item {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  
+  .how-to__item + .how-to__item {
+    margin-bottom: .5rem;
+  }
+  
+  .how-to__item span {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-18px);
+    width: 10px;
+  }
+  
+  .how-to__item p {
+    font-size: var(--fs-16px);
+  }
+
+  /* ======================== Footer  ============================== */
+  .footer .social-media ul {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
   }
 }
