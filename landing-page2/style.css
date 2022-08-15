@@ -121,7 +121,7 @@ h4{
 }
 main{
     background-color: whitesmoke;
-    height: 1600px;
+    height: 3500px;
     
 }
 .column{
@@ -143,17 +143,14 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.template{
-   height: 350px;
-   position: relative;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
 }   
 .temp1{
-   margin-left: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   justify-content: space-between;
+   flex-direction: row;
+   display: flex;
 }
 template .export{
    width: 60px;
@@ -163,3 +160,101 @@ template .export{
    height: 200px;
    float: right;
 }   
+.crimune{
+   position: relative;
+   display: flex;
+   padding: 0;
+   justify-content: flex-end;
+}
+.futal{
+   position: relative;
+   display: flex;
+   padding: 0;
+   justify-content: center;
+}
+.layout{
+   background-color: rgb(87, 87, 243);
+   color: white;
+}
+.divaug{
+   position: relative;
+   display: flex;
+   padding: 0;
+   justify-content: center;
+}
+.btn2{
+    background-color: rgb(33, 32, 32); 
+    color: white;
+    border: 1.5px solid transparent;
+    padding: 10px 25px;
+    justify-content: center;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;   
+}
+.position .augdiv{
+   position: relative;
+   top: -20pxpx;
+   left: 50px;
+}
+.happyuser{
+   position: relative;
+   display: flex;
+   padding: 0;
+   justify-content: center;
+   height: 350px;
+   width: 700px;
+   margin: auto;
+   margin-top: 30px;
+}
+.started1234{
+   background-color: blue;
+   color: white;
+   height: 350px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   justify-content: space-between;
+   flex-direction: row;
+   display: flex;
+}
+.start2{
+   line-height: 2;
+   margin-right: 15px;
+}
+.form1{
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.btn3{
+   display: flex;
+   align-content: center;
+   width: 350px;
+   border: 1.5px solid transparent;
+    padding: 10px 25px;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+footer{
+   height: 350px;
+   width: 100%;
+   padding: 0;
+   background-color: blue;
+   color: white;
+}
+table{
+   width:100%;
+   text-align: center;
+   align-items: center;
+}
+td{
+   text-align: center;
+}
+.tab1{
+   margin-top: 20px;
+}

@@ -8,7 +8,11 @@ Django
 
 ## Change directory to project folder
 
-## Run pip install
+## Create and activate a virtual envitonment
+        run python -m venv env
+        run env\scripts\activate
+
+## Run pip freeze > requirements.txt
 
 
 ## Create .env file
@@ -26,13 +30,29 @@ Django
 ## Project Structure
 
 ```
-my_cms_team_12\
+portfolia
  |--.env        # Environment variables and configuration related things
  |--settings.py    # 
  |--urls.py   # Link to urls
  |--models.py       # Database schema (data layer)
  |--views\         # Routes
-```
+ |
+accounts
+ |
+pages
+ |--about_page
+ |--documentation
+ |--pricing_page
+ |--homepage 
+landing_page
+ |
+dashboard
+ |
+template_gallery
+ |-templates
+ |
+portfolio_website
+
 
 ## Links
   * Figma  Link https://www.figma.com/file/ZJvLM9kcGJBdL9qOESMsRa/My-cms?node-id=158%3A107
