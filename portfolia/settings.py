@@ -65,6 +65,8 @@ INSTALLED_APPS = [
     'landing_page',
     'dashboard',
     'accounts.apps.AccountsConfig',
+    'template_gallery',
+    'pages',
 
     # Third-party apps
     'django_extensions',
@@ -242,7 +244,7 @@ ACCOUNT_USERNAME_REQUIRED = False
 
 
 
-LOGIN_REDIRECT_URL = '/dashboard'
+LOGIN_REDIRECT_URL = 'pages/home'
 LOGOUT_REDIRECT_URL = '/accounts/login'
 
 #55442352359-jhhse5q68f6r49tr1asuf52oslq8n5mh.apps.googleusercontent.com
