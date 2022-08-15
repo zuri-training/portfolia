@@ -247,3 +247,12 @@ LOGOUT_REDIRECT_URL = '/accounts/login'
 
 #55442352359-jhhse5q68f6r49tr1asuf52oslq8n5mh.apps.googleusercontent.com
 #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
+
+#SMTP Configuration
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'zuriportfoliaproject@gmail.com'
+EMAIL_HOST_PASSWORD = 'gkgftkhllsawsery'

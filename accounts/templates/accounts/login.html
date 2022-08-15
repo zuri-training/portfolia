@@ -25,6 +25,17 @@
 
         <h3 id="header">Log into Portfolia</h3>
 
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">
+                    {{ message|safe }}
+                    <a href="{% url 'accounts:signup' %}" class="close">x</a>
+                </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        
         <div class="form-container">
             <form action="#" method="POST">
                 {% csrf_token %}
@@ -54,7 +65,7 @@
     
         </div>
 
-        <p class="cant-login"><a href="#" >Can't Login?</a></p>
+        <p class="cant-login"><a href="{% url 'accounts:reset_password' %}" >Can't Login?</a></p>
         <p class="captcha">Secure Login with reCAPTCHA subject to <a href="#">Google Terms</a> & <a href="#">Privacy</a></p>
 
 
