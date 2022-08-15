@@ -57,7 +57,7 @@ def register_view(request):
 
         messages.add_message(request, messages.SUCCESS, 'Account created successfully')
 
-        return redirect('dashboard')
+        return redirect('pages:home')
     return render(request, 'accounts/signup.html')
 
 def login_view(request):
@@ -89,7 +89,7 @@ def login_view(request):
             return render(request, 'accounts/login.html', status=401, context=context)
         
         login(request, user)
-        return redirect('dashboard')
+        return redirect('pages:home')
     return render(request, 'accounts/login.html')
 
 
