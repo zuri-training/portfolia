@@ -11,14 +11,15 @@ User = get_user_model()
 def register_view(request):
 
     if request.method == 'POST':
+        data = request.POST
         context={
         'has_error':False
         }
-        email = request.POST.get('email')
-        first_name = request.POST.get('first_name')
-        last_name = request.POST.get('last_name')
-        password = request.POST.get('password')
-        password2 = request.POST.get('password2')
+        email = request.POST.get('email', None)
+        first_name = request.POST.get('first_name', None)
+        last_name = request.POST.get('last_name', None)
+        password = request.POST.get('password', None)
+        password2 = request.POST.get('password2', None)
 
         if len(password) < 6:
             messages.add_message(request, messages.ERROR, 'Passwords should be at least 6 characters long')
@@ -41,14 +42,14 @@ def register_view(request):
         except Exception as identifier:
             pass 
 
-        if User.objects.filter(email=email).exists():
-            messages.add_message(request, messages.ERROR, 'Email is taken')
-            context['has_error'] = True
+        # if User.objects.filter(email=email).exists():
+        #     messages.add_message(request, messages.ERROR, 'Email is taken')
+        #     context['has_error'] = True
 
         if context['has_error']:
             return render(request, 'accounts/signup.html', context, status=400)
         
-        user = User.objects.create_user(email=email,)
+        user = User.objects.create_user(email=email, password=None)
         user.set_password(password)
         user.first_name = first_name
         user.last_name = last_name
@@ -56,12 +57,12 @@ def register_view(request):
 
         messages.add_message(request, messages.SUCCESS, 'Account created successfully')
 
-        return redirect('dashboard:index')
+        return redirect('dashboard')
     return render(request, 'accounts/signup.html')
 
 def login_view(request):
     if request.user.is_authenticated:
-        return redirect('dashboard:index')
+        return redirect('dashboard')
 
 
     if request.method =='POST':
@@ -88,7 +89,7 @@ def login_view(request):
             return render(request, 'accounts/login.html', status=401, context=context)
         
         login(request, user)
-        return redirect('dashboard:index')
+        return redirect('dashboard')
     return render(request, 'accounts/login.html')
 
 
