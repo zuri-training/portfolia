@@ -8,3 +8,4 @@ slack username: @Abby_fade
 * Worked on website header and footer
 https://github.com/zuri-training/portfolia/tree/main/header%20and%20footer
 * Worked on homepage development 
+https://github.com/zuri-training/portfolia/tree/main/homepage
