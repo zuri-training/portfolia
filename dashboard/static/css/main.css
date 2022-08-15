@@ -130,7 +130,7 @@
         width: 70%;
     }
     .dashboard-container .sidebar nav div:nth-of-type(2){
-        position: absolute; bottom: 30px; left:20px;
+         left:20px;
     }
     .dashboard-container .right-section{
         width: 80%;
@@ -265,7 +265,7 @@
     }
 }
 .article-section .post-list .item{
-    height: 55px;
+    min-height: 55px;
     margin: 10px 0;
     padding: 5px;
     align-items: center;

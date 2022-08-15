@@ -11,7 +11,9 @@
   <!-- CSS Bootstrap -->
   <link rel="stylesheet" href="../static/css/bootstrap.css">
   <!-- Swiper Js -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css" />
+  <!-- Aos Js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS Style -->
   <link rel="stylesheet" href="../static/css/styles.css">
 
@@ -43,9 +45,9 @@
                 <i class="fa-solid fa-angle-down"></i>
               </a>
               <ul class="dropdown-menu mx-1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Explore Item</a></li>
+                <li><a class="dropdown-item" href="#">Explore Item</a></li>
+                <li><a class="dropdown-item" href="#">Explore Item</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown mx-1">
@@ -55,9 +57,9 @@
                 <i class="fa-solid fa-angle-down"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Features Item</a></li>
+                <li><a class="dropdown-item" href="#">Features Item</a></li>
+                <li><a class="dropdown-item" href="#">Features Item</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -67,19 +69,19 @@
                 <i class="fa-solid fa-angle-down" id="nav-toggle"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+                <li><a class="dropdown-item" href="#">Community</a></li>
               </ul>
             </li>
           </ul>
         </div>
         <ul class="navbar-nav navbar-btns">
           <li class="nav-item">
-            <a href="#" class="pfl-btn pfl-btn-secondary me-lg-1">Sign in</a>
+            <a href="{% url 'accounts:login' %}" class="pfl-btn pfl-btn-secondary me-lg-1">Sign in</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="pfl-btn pfl-btn-primary">Get started</a>
+            <a href="{% url 'accounts:signup' %}" class="pfl-btn pfl-btn-primary">Get started</a>
           </li>
         </ul>
       </div>
@@ -99,7 +101,7 @@
             </p>
           </div>
           <div class="col-12 col-lg-5 col-md-12 img-hero">
-            <img src="../static/img/image-hero.png" alt="">
+            <img src="../static/img/image-hero.png" alt="" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
           </div>
         </div>
       </div>
@@ -140,8 +142,8 @@
     <section class="why-choose-us">
       <div class="container-xxl">
         <div class="row mb-5">
-          <div class="col-8 mx-auto text-center">
-            <h2 class="fw-bold">Why choose us?</h2>
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="fw-bold pfl-section-title">Why choose us?</h2>
           </div>
         </div>
         <div class="row justify-content-around">
@@ -190,45 +192,183 @@
           <div class="col-lg-5">
             <h2 class="fw-bold pfl-section-title">Choose your Templates</h2>
           </div>
-          <div class="col-lg-5">
-            <p>View and select templates that suit your needs and requirements</p>
-            <a class="pfl-templates-link fw-bold" href="#">EXPLORE TEMPLATES<span class="ms-2"><i
+          <div class="col-lg-6">
+            <p class="description" data-aos="fade-right" data-aos-duration="2000">View and select templates that suit your needs and requirements</p>
+            <a class="pfl-templates-link fw-bold" href="#" data-aos="fade-left" data-aos-duration="2000">EXPLORE TEMPLATES<span class="ms-2"><i
                   class="fa-solid fa-arrow-right"></i></span></a>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-10 ms-auto dynamic-swiper">
-            <div class="templates-swiper swiper-container">
-              <div class="swiper-wrapper">
+            <div class="slide-container swiper">
+              <div class="templates-wrapper swiper-wrapper">
                 <div class="templates-item swiper-slide">
-                  <a href="#" class="templates-card">
-                    <div class="card-body">
-                      <div class="templates-card__image">
-                        <img src="../static/img/crimson-image-templates.png" alt="Crimson template image">
-                      </div>
-                      <div class="templates-card__title">
-                        <a href="#" class="pfl-templates-link fw-semibold">Crimson</a>
-                      </div>
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/crimson-image-templates.png" alt="Crimson templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Crimson</a>
                     </div>
                   </a>
                 </div>
                 <div class="templates-item swiper-slide">
-                  <a href="#" class="templates-card">
-                    <div class="card-body">
-                      <div class="templates-card__image">
-                        <img src="../static/img/fortune-image-templates.png" alt="Fortune template image">
-                      </div>
-                      <div class="templates-card__title">
-                        <a href="#" class="pfl-templates-link fw-semibold">Fortune</a>
-                      </div>
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/fortune-image-templates.png" alt="Fortune templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Fortune</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="templates-item swiper-slide">
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/other-image-templates.png" alt="templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Crimson A</a>
+                    </div>
+                  </a>
+                </div>
+                <div class="templates-item swiper-slide">
+                  <a href="#" class="card">
+                    <div class="templates-card__image">
+                      <img src="../static/img/other1-image-templates.png" alt="templates" class="img-templates">
+                    </div>
+                    <div class="templates-card__title ms-lg-1">
+                      <a href="#" class="pfl-templates-link fw-semibold">Fortune A</a>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="d-none d-lg-flex justify-content-end mb-3 mr-3">
-                <a href="#" class="pfl-swiper-slider-prev"><i class="fa-solid fa-arrow-left-long"></i></a>
-                <a href="#" class="pfl-swiper-slider-nect"><i class="fa-solid fa-arrow-right-long"></i></a>
+              <div class="swiper-action">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-arrows">
+                  <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                  <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="what-user-say">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-10 ms-lg-5">
+            <h2 class="pfl-section-title" data-aos="fade-left" data-aos-duration="3000">What say happy Users</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-11 dynamic-quotes mx-auto">
+            <div class="quotes-container swiper">
+              <div class="quotes-wrapper swiper-wrapper">
+                <div class="comments-item swiper-slide">
+                  <div class="card">
+                    <i class="fa-solid fa-quote-left quotes-icon"></i>
+                    <p class="quotes-text">Thank you so much, I have been able to present myself to my potential client
+                      in
+                      the best way. I have also seen exponential growth in my career and myself all thanks to Portfolia.
+                    </p>
+                    <div class="information">
+                      <div class="people-info">
+                        <img src="../static/img/quotes1.png" alt="">
+                        <div class="name-information">
+                          <p class="name">Brooklyn Simmons</p>
+                          <span class="profession">Pendron.Inc, CEO</span>
+                        </div>
+                      </div>
+                      <div class="star">
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-item swiper-slide">
+                  <div class="card">
+                    <i class="fa-solid fa-quote-left quotes-icon"></i>
+                    <p class="quotes-text">Outsitanding services i got here, will highly recommend to anybody looking
+                      for a way to create a portfolio. so easy to use and i really love it.</p>
+                    <div class="information">
+                      <div class="people-info">
+                        <img src="../static/img/quotes2.png" alt="">
+                        <div class="name-information">
+                          <p class="name">Jenny Wilson</p>
+                          <span class="profession">Bettero.Inc, CEO</span>
+                        </div>
+                      </div>
+                      <div class="star">
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-item swiper-slide">
+                  <div class="card">
+                    <i class="fa-solid fa-quote-left quotes-icon"></i>
+                    <p class="quotes-text">Thank you so much, I have been able to present myself to my potential client
+                      in
+                      the best way. I have also seen exponential growth in my career and myself all thanks to Portfolia.
+                    </p>
+                    <div class="information">
+                      <div class="people-info">
+                        <img src="../static/img/quotes1.png" alt="">
+                        <div class="name-information">
+                          <p class="name">Brooklyn Simmons</p>
+                          <span class="profession">Pendron.Inc, CEO</span>
+                        </div>
+                      </div>
+                      <div class="star">
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-item swiper-slide">
+                  <div class="card">
+                    <i class="fa-solid fa-quote-left quotes-icon"></i>
+                    <p class="quotes-text">Thank you so much, I have been able to present myself to my potential client
+                      in
+                      the best way. I have also seen exponential growth in my career and myself all thanks to Portfolia.
+                    </p>
+                    <div class="information">
+                      <div class="people-info">
+                        <img src="../static/img/other1-image-templates.png" alt="">
+                        <div class="name-information">
+                          <p class="name">Brooklyn Simmons</p>
+                          <span class="profession">Pendron.Inc, CEO</span>
+                        </div>
+                      </div>
+                      <div class="star">
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                        <i class="fa-solid fa-star good"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrow-quotes">
+              <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+              <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
           </div>
         </div>
@@ -239,7 +379,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-12">
             <h2 class="pfl-section-title mb-lg-5">How to create a Portfolio</h2>
-            <a class="pfl-templates-link fw-bold" href="#">Get started<span class="ms-2"><i
+            <a class="pfl-templates-link fw-bold" href="#" data-aos="fade-left" data-aos-duration="2000">Get started<span class="ms-2"><i
                   class="fa-solid fa-arrow-right"></i></span></a>
           </div>
           <div class="col-lg-6 offset-lg-3 col-md-12">
@@ -296,7 +436,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </a>
               <ul class="dropdown-menu mx-1">
-                <li><a class="dropdown-item" href="#">Afganistan (AFG)</a></li>
+                <li><a class="dropdown-item" href="#">Australia (AUS)</a></li>
                 <li><a class="dropdown-item" href="#">Indonesia (IND)</a></li>
               </ul>
             </li>
@@ -392,7 +532,9 @@
   <!-- Bootstrap JS -->
   <script src="../static/js/bootstrap-js-popper.js"></script>
   <!-- Swiper Js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="../static/js/swiper-bundle.min.js"></script>
+  <!-- Aos Js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="../static/js/script.js"></script>
 </body>
 

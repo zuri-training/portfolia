@@ -39,7 +39,7 @@
 
         <h4 class="">Or</h4>
 
-        {% if messages %}
+        {% comment %} {% if messages %}
 
         {% for message in messages %}
 
@@ -54,24 +54,38 @@
         {% endfor %}
 
 
+        {% endif %} {% endcomment %}
+
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">
+                    {{ message|safe }}
+                    <a href="{% url 'accounts:signup' %}" class="close">x</a>
+                </li>
+            {% endfor %}
+        </ul>
         {% endif %}
 
-        <form action="#" method="POST">
+
+
+        <form action="#" class = "signup-form"  method="POST">
             {% csrf_token %}
             <label for="first_name" >First Name</label><br>
-            <input type="text" placeholder="John" name ="first_name" id="first_name" value="{{user.first_name}}" required><br>
+            <input type="text" placeholder="John" name ="first_name" id="first_name" value="{{data.first_name}}" required><br>
 
             <label for="first_name" >Last Name</label><br>
-            <input type="text" placeholder="Doe" name ="last_name" id="last_name" value="{{user.last_name}}" required><br>
+            <input type="text" placeholder="Doe" name ="last_name" id="last_name" value="{{data.last_name}}" required><br>
 
             <label for="email" >Email</label><br>
-            <input type="email" placeholder="name@email.com" name ="email" id="email" value="{{user.email}}" required><br>
+            <input type="email" placeholder="name@email.com" name ="email" id="email" value="{{data.email}}" required><br>
 
             <label for="password" >Password</label><br>
             <input type="password" placeholder="Password" name ="password" id="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required><br>
 
             <label for="confirm_password" >Confirm Password</label><br>
-            <input type="password" placeholder="Should match password" name ="confirm_password" id="confirm_password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required><br>
+            <input type="password" placeholder="Should match password" name ="password2" id="password2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$" required><br>
 
             <p class="terms"> By creating an account, you agree to the <a href="#">Terms of service</a> and have read and understood the <a href="#">Privacy Policy</a></p><br>
 
