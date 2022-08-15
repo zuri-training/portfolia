@@ -45,7 +45,7 @@
                 <i class="fa-solid fa-angle-down"></i>
               </a>
               <ul class="dropdown-menu mx-1">
-                <li><a class="dropdown-item" href="#">Explore Item</a></li>
+                <li><a class="dropdown-item" href="{% url 'template_gallery' %}">Template Gallery</a></li>
                 <li><a class="dropdown-item" href="#">Explore Item</a></li>
                 <li><a class="dropdown-item" href="#">Explore Item</a></li>
               </ul>
@@ -69,7 +69,7 @@
                 <i class="fa-solid fa-angle-down" id="nav-toggle"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" href="{% url 'pages:about' %}">About us</a></li>
                 <li><a class="dropdown-item" href="#">News</a></li>
                 <li><a class="dropdown-item" href="#">Community</a></li>
               </ul>
@@ -194,7 +194,7 @@
           </div>
           <div class="col-lg-6">
             <p class="description" data-aos="fade-right" data-aos-duration="2000">View and select templates that suit your needs and requirements</p>
-            <a class="pfl-templates-link fw-bold" href="#" data-aos="fade-left" data-aos-duration="2000">EXPLORE TEMPLATES<span class="ms-2"><i
+            <a class="pfl-templates-link fw-bold" href="{% url 'template_gallery' %}" data-aos="fade-left" data-aos-duration="2000">EXPLORE TEMPLATES<span class="ms-2"><i
                   class="fa-solid fa-arrow-right"></i></span></a>
           </div>
         </div>
@@ -251,6 +251,61 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="options-design">
+      <div class="container-xxl">
+        <div class="detail-options">
+          <div class="row">
+            <div class="col-lg-4 mx-auto text-center">
+              <h2 class="pfl-section-title">So many design options for you!</h2>
+            </div>
+          </div>
+          <div class="example-design text-center">
+            <div class="row d-flex justify-content-center align-content-center">
+              <div class="col-lg-5">
+                <div class="design-wrapper">
+                  <img src="../static/img/options-design1.png" alt="" data-aos="fade-up-left" data-aos-duration="3000">
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="design-wrapper">
+                  <img src="../static/img/options-design2.png" alt="" data-aos="fade-up-right" data-aos-duration="3000">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <div class="design-wrapper">
+                  <img src="../static/img/options-design3.png" alt="" class="design-absolute" data-aos="fade-down" data-aos-duration="3000">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center d-flex justify-content-center">
+            <div class="col-lg-5">
+              <p class="description-design-options">
+                Bring your desire and vision to life by choosing a template, awesome layouts, fonts, colors and perfect
+                pixel quality pictures from the best plugins available.
+              </p>
+            </div>
+          </div>
+          <p class="text-center">
+            <a href="#" class="pfl-btn pfl-btn-link">Build your site</a>
+          </p>
+        </div>
+        <div class="option-layouts">
+          <div class="card">
+            <p class="title-layout">Layout</p>
+            <ul class="list-group">
+              <a href="#">Rowland Style<span><i class="fa-solid fa-check"></i></span></a>
+              <a href="#">Side by Side Style<span><i class="fa-solid fa-check"></i></span></a>
+              <a href="#">Basic Style<span><i class="fa-solid fa-check"></i></span></a>
+              <a href="#">One Column Style<span><i class="fa-solid fa-check"></i></span></a>
+              <a href="#">Alternating Style<span><i class="fa-solid fa-check"></i></span></a>
+            </ul>
           </div>
         </div>
       </div>
@@ -379,7 +434,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-12">
             <h2 class="pfl-section-title mb-lg-5">How to create a Portfolio</h2>
-            <a class="pfl-templates-link fw-bold" href="#" data-aos="fade-left" data-aos-duration="2000">Get started<span class="ms-2"><i
+            <a class="pfl-templates-link fw-bold" href="{% url 'accounts:signup' %}" data-aos="fade-left" data-aos-duration="2000">Get started<span class="ms-2"><i
                   class="fa-solid fa-arrow-right"></i></span></a>
           </div>
           <div class="col-lg-6 offset-lg-3 col-md-12">

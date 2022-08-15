@@ -4,5 +4,5 @@ from . import views
 
 # URLConf
 urlpatterns =[
-    path('dashboard/<str:pk>', views.index, name="dashboard"),
+    path('dashboard/', views.index, name="dashboard"),
 ]
