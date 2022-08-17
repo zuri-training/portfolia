@@ -33,8 +33,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY',
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ["SECRET_KEY"]
 # SECURITY WARNING: don't run with debug turned on in production!
-if not IS_HEROKU:
-    DEBUG = True
+DEBUG = True
 
 
 if IS_HEROKU:
