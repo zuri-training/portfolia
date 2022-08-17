@@ -16,10 +16,10 @@ jmespath==0.10.0
 pathspec==0.9.0
 platformdirs==2.5.2
 pycodestyle==2.8.0
-pypiwin32==223
+
 python-dateutil==2.8.2
 python-decouple==3.6
-pywin32==304
+
 PyYAML==5.4.1
 requests==2.26.0
 semantic-version==2.8.5
