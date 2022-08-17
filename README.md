@@ -1,6 +1,7 @@
 # Portfolia
 
-Django
+A platform that allows users to spin up a Portfolio  website - allowing as much customizations as possible.
+
 
 ## Quick Start to run locally
 
@@ -53,9 +54,16 @@ template_gallery
  |
 portfolio_website
 
+## Tech Stack
+Frontend: HTML, CSS, JavaScript
+BACKEND/SERVER: Python, Django, Heroku
+DESIGN: Figma
+
 
 ## Links
   * Figma  Link https://www.figma.com/file/ZJvLM9kcGJBdL9qOESMsRa/My-cms?node-id=158%3A107
+  * Database schema Link: https://www.figma.com/file/bowmxI9p6Ejp5gD0B07efX/my_cms-database-schema?node-id=0%3A1
+  * Documentation Link: https://docs.google.com/document/d/1YkfCIu3IK9ooN3-UclP5PVt_tDz1Ze85O78Y8gJBsM8/edit?usp=sharing
   
 
 
