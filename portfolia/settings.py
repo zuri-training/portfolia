@@ -167,7 +167,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'portfolia/static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'portfolia/static/'),
+    os.path.join(BASE_DIR, 'accounts/static/'),
+    os.path.join(BASE_DIR, 'dashboard/static/'),
+    os.path.join(BASE_DIR, 'contributions/static/'),
+    os.path.join(BASE_DIR, 'landing_page/static/'),
+    os.path.join(BASE_DIR, 'template_gallery/static/')
+]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #to serve media images in development like pictures
