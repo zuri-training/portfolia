@@ -168,10 +168,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'portfolia/static/'),
     os.path.join(BASE_DIR, 'accounts/static/'),
     os.path.join(BASE_DIR, 'dashboard/static/'),
-    os.path.join(BASE_DIR, 'contributions/static/'),
     os.path.join(BASE_DIR, 'landing_page/static/'),
     os.path.join(BASE_DIR, 'template_gallery/static/')
 ]
