@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolia | Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="{% static 'dashboard/css/main.css' %}">
 </head>
 <body>
 
@@ -15,7 +17,7 @@
         <!-- sidebar -->
         <div class="sidebar" id="sidebar">
             <div class="flex justify-content-end close-btn"><i class="fa fa-times" onclick="handleMenu()"></i></div>
-            <img src="../static/images/logo.svg" alt="logo" class="logo">
+            <img src="{% static 'dashboard/images/logo.svg' %}" alt="logo" class="logo">
 
             <!-- sidebar navlist ends here -->
             <nav class="grid grid-row-2">
@@ -85,7 +87,7 @@
                 <div class="toggle-btn" >
                     <i class="fa fa-bars" onclick="handleMenu()"></i>
                 </div>
-                <img src="../static/images/Ellipse 84.png" alt="profile image">
+                <img src="{% static 'dashboard/images/Ellipse 84.png' %}" alt="profile image">
                 <div class="flex  align-items-center action-btn">
                     <span class="bell-icon">
                         <i class="fa fa-bell-o"></i>
@@ -104,7 +106,7 @@
                     <h1>{{user.first_name}}</h1>
                     <p>A few items for your <span>approval</span> </p>
                 </div>
-                <img src="../static/images/Ellipse 84.png" alt="">
+                <img src="{% static 'dashboard/images/Ellipse 84.png' %}" alt="">
             </div>
             <!-- hero-section ends here -->
 
@@ -192,7 +194,7 @@
     </div>
     <!-- dashboard-container ends here -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../static/js/chart-config.js"></script>
-    <script src="../static/js/main.js"></script>
+    <script src="{% static 'dashboard/js/chart-config.js' %}"></script>
+    <script src="{% static 'dashboard/js/main.js' %}"></script>
 </body>
 </html>

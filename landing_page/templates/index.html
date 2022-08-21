@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +10,13 @@
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <!-- CSS Bootstrap -->
-  <link rel="stylesheet" href="../static/css/bootstrap.css">
+  <link rel="stylesheet" href="{% static 'landing_page/css/bootstrap.css' %}">
   <!-- Swiper Js -->
-  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static 'landing_page/css/swiper-bundle.min.css' %}" />
   <!-- Aos Js -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS Style -->
-  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="{% static 'landing_page/css/styles.css' %}">
 
 </head>
 
@@ -23,8 +24,8 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-xxl">
       <a href="#" class="navbar-brand">
-        <img src="../static/img/portfolia-logo-desktop.svg" alt="Portfolia logo" class="portfolia-logo-desktop">
-        <img src="../static/img/portfolia-logo-mobile.svg" alt="Portfolia logo" class="portfolia-logo-mobile">
+        <img src="{% static 'landing_page/img/portfolia-logo-desktop.svg' %}" alt="Portfolia logo" class="portfolia-logo-desktop">
+        <img src="{% static 'landing_page/img/portfolia-logo-mobile.svg' %}" alt="Portfolia logo" class="portfolia-logo-mobile">
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -101,7 +102,7 @@
             </p>
           </div>
           <div class="col-12 col-lg-5 col-md-12 img-hero">
-            <img src="../static/img/image-hero.png" alt="" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+            <img src="{% static 'landing_page/img/image-hero.png' %}" alt="" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-sine">
           </div>
         </div>
       </div>
@@ -111,29 +112,29 @@
         <div class="row d-lg-flex justify-content-center text-center mt-5">
           <div class="col-lg-3 company-item">
             <div class="pfl-support_logo-wrapper">
-              <img src="../static/img/netflix-logo.svg" alt="Netflix logo">
+              <img src="{% static 'landing_page/img/netflix-logo.svg' %}" alt="Netflix logo">
             </div>
           </div>
           <div class="col-lg-3 company-item">
             <div class="pfl-support_logo-wrapper">
-              <img src="../static/img/walmart-logo.svg" alt="Walmart logo">
+              <img src="{% static 'landing_page/img/walmart-logo.svg' %}" alt="Walmart logo">
             </div>
           </div>
           <div class="col-lg-3 company-item">
             <div class="pfl-support_logo-wrapper">
-              <img src="../static/img/instacart-logo.svg" alt="Instacart logo">
+              <img src="{% static 'landing_page/img/instacart-logo.svg' %}" alt="Instacart logo">
             </div>
           </div>
         </div>
         <div class="row d-flex justify-content-center text-center">
           <div class="col-lg-3 company-item">
             <div class="pfl-support_logo-wrapper">
-              <img src="../static/img/google-logo.svg" alt="Google logo">
+              <img src="{% static 'landing_page/img/google-logo.svg' %}" alt="Google logo">
             </div>
           </div>
           <div class="col-lg-3 company-item">
             <div class="pfl-support_logo-wrapper">
-              <img src="../static/img/cocacola-logo.svg" alt="Coca-cola logo">
+              <img src="{% static 'landing_page/img/cocacola-logo.svg' %}" alt="Coca-cola logo">
             </div>
           </div>
         </div>
@@ -150,7 +151,7 @@
           <div class="col-lg-3">
             <div class="card bg-transparent border-0">
               <div class="pfl-why-choose_image-wrapper text-center">
-                <img src="../static/img/why-choose-1.svg" class="card-img-top" alt="">
+                <img src="{% static 'landing_page/img/why-choose-1.svg' %}" class="card-img-top" alt="">
               </div>
               <div class="card-body">
                 <h3 class="pfl-card-title mb-lg-3">Be in control with your website</h3>
@@ -163,7 +164,7 @@
           <div class="col-lg-3">
             <div class="card bg-transparent border-0">
               <div class="pfl-why-choose_image-wrapper text-center">
-                <img src="../static/img/why-choose-2.svg" class="card-img-top" alt="">
+                <img src="{% static 'landing_page/img/why-choose-2.svg' %}" class="card-img-top" alt="">
               </div>
               <div class="card-body">
                 <h3 class="pfl-card-title mb-lg-3">Get to your audience quickly</h3>
@@ -175,7 +176,7 @@
           <div class="col-lg-3">
             <div class="card bg-transparent border-0">
               <div class="pfl-why-choose_image-wrapper text-center">
-                <img src="../static/img/why-choose-3.svg" class="card-img-top" alt="">
+                <img src="{% static 'landing_page/img/why-choose-3.svg' %}" class="card-img-top" alt="">
               </div>
               <div class="card-body">
                 <h3 class="pfl-card-title mb-lg-3">Decide on what you want to work with</h3>
@@ -205,7 +206,7 @@
                 <div class="templates-item swiper-slide">
                   <a href="#" class="card">
                     <div class="templates-card__image">
-                      <img src="../static/img/crimson-image-templates.png" alt="Crimson templates" class="img-templates">
+                      <img src="{% static 'landing_page/img/crimson-image-templates.png' %}" alt="Crimson templates" class="img-templates">
                     </div>
                     <div class="templates-card__title ms-lg-1">
                       <a href="#" class="pfl-templates-link fw-semibold">Crimson</a>
@@ -215,7 +216,7 @@
                 <div class="templates-item swiper-slide">
                   <a href="#" class="card">
                     <div class="templates-card__image">
-                      <img src="../static/img/fortune-image-templates.png" alt="Fortune templates" class="img-templates">
+                      <img src="{% static 'landing_page/img/fortune-image-templates.png' %}" alt="Fortune templates" class="img-templates">
                     </div>
                     <div class="templates-card__title ms-lg-1">
                       <a href="#" class="pfl-templates-link fw-semibold">Fortune</a>
@@ -225,7 +226,7 @@
                 <div class="templates-item swiper-slide">
                   <a href="#" class="card">
                     <div class="templates-card__image">
-                      <img src="../static/img/other-image-templates.png" alt="templates" class="img-templates">
+                      <img src="{% static 'landing_page/img/other-image-templates.png' %}" alt="templates" class="img-templates">
                     </div>
                     <div class="templates-card__title ms-lg-1">
                       <a href="#" class="pfl-templates-link fw-semibold">Crimson A</a>
@@ -235,7 +236,7 @@
                 <div class="templates-item swiper-slide">
                   <a href="#" class="card">
                     <div class="templates-card__image">
-                      <img src="../static/img/other1-image-templates.png" alt="templates" class="img-templates">
+                      <img src="{% static 'landing_page/img/other1-image-templates.png' %}" alt="templates" class="img-templates">
                     </div>
                     <div class="templates-card__title ms-lg-1">
                       <a href="#" class="pfl-templates-link fw-semibold">Fortune A</a>
@@ -267,19 +268,19 @@
             <div class="row d-flex justify-content-center align-content-center">
               <div class="col-lg-5">
                 <div class="design-wrapper">
-                  <img src="../static/img/options-design1.png" alt="" data-aos="fade-up-left" data-aos-duration="3000">
+                  <img src="{% static 'landing_page/img/options-design1.png' %}" alt="" data-aos="fade-up-left" data-aos-duration="3000">
                 </div>
               </div>
               <div class="col-lg-5">
                 <div class="design-wrapper">
-                  <img src="../static/img/options-design2.png" alt="" data-aos="fade-up-right" data-aos-duration="3000">
+                  <img src="{% static 'landing_page/img/options-design2.png' %}" alt="" data-aos="fade-up-right" data-aos-duration="3000">
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 d-flex justify-content-center">
                 <div class="design-wrapper">
-                  <img src="../static/img/options-design3.png" alt="" class="design-absolute" data-aos="fade-down" data-aos-duration="3000">
+                  <img src="{% static 'landing_page/img/options-design3.png' %}" alt="" class="design-absolute" data-aos="fade-down" data-aos-duration="3000">
                 </div>
               </div>
             </div>
@@ -330,7 +331,7 @@
                     </p>
                     <div class="information">
                       <div class="people-info">
-                        <img src="../static/img/quotes1.png" alt="">
+                        <img src="{% static 'landing_page/img/quotes1.png' %}" alt="">
                         <div class="name-information">
                           <p class="name">Brooklyn Simmons</p>
                           <span class="profession">Pendron.Inc, CEO</span>
@@ -353,7 +354,7 @@
                       for a way to create a portfolio. so easy to use and i really love it.</p>
                     <div class="information">
                       <div class="people-info">
-                        <img src="../static/img/quotes2.png" alt="">
+                        <img src="{% static 'landing_page/img/quotes2.png' %}" alt="">
                         <div class="name-information">
                           <p class="name">Jenny Wilson</p>
                           <span class="profession">Bettero.Inc, CEO</span>
@@ -378,7 +379,7 @@
                     </p>
                     <div class="information">
                       <div class="people-info">
-                        <img src="../static/img/quotes1.png" alt="">
+                        <img src="{% static 'landing_page/img/quotes1.png' %}" alt="">
                         <div class="name-information">
                           <p class="name">Brooklyn Simmons</p>
                           <span class="profession">Pendron.Inc, CEO</span>
@@ -403,7 +404,7 @@
                     </p>
                     <div class="information">
                       <div class="people-info">
-                        <img src="../static/img/other1-image-templates.png" alt="">
+                        <img src="{% static 'landing_page/img/other1-image-templates.png' %}" alt="">
                         <div class="name-information">
                           <p class="name">Brooklyn Simmons</p>
                           <span class="profession">Pendron.Inc, CEO</span>
@@ -482,7 +483,7 @@
     <div class="container-xxl">
       <div class="row d-flex justify-content-center ">
         <div class="col portfolia-footer">
-          <a href="#"><img src="../static/img/portfolia-logo-white.svg" alt=""></a>
+          <a href="#"><img src="{% static 'landing_page/img/portfolia-logo-white.svg' %}" alt=""></a>
           <ul class="dropdown-language">
             <li class="dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -567,16 +568,16 @@
           <h3>Follow us</h3>
           <ul>
             <li>
-              <a href="#" class="footer__link socials"><img src="../static/img/twitter-icon.svg" alt=""></i>Twitter</a>
+              <a href="#" class="footer__link socials"><img src="{% static 'landing_page/img/twitter-icon.svg' %}" alt=""></i>Twitter</a>
             </li>
             <li>
-              <a href="#" class="footer__link socials"><img src="../static/img/facebook-icon.svg" alt="">Facebook</a>
+              <a href="#" class="footer__link socials"><img src="{% static 'landing_page/img/facebook-icon.svg' %}" alt="">Facebook</a>
             </li>
             <li>
-              <a href="#" class="footer__link socials"><img src="../static/img/linkedin-icon.svg" alt="">LinkedIn</a>
+              <a href="#" class="footer__link socials"><img src="{% static 'landing_page/img/linkedin-icon.svg' %}" alt="">LinkedIn</a>
             </li>
             <li>
-              <a href="#" class="footer__link socials"><img src="../static/img/instagram-icon.svg" alt="">Instagram</a>
+              <a href="#" class="footer__link socials"><img src="{% static 'landing_page/img/instagram-icon.svg' %}" alt="">Instagram</a>
             </li>
           </ul>
         </div>
@@ -585,12 +586,12 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="../static/js/bootstrap-js-popper.js"></script>
+  <script src="{% static 'landing_page/js/bootstrap-js-popper.js' %}"></script>
   <!-- Swiper Js -->
-  <script src="../static/js/swiper-bundle.min.js"></script>
+  <script src="{% static 'landing_page/js/swiper-bundle.min.js' %}"></script>
   <!-- Aos Js -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="../static/js/script.js"></script>
+  <script src="{% static 'landing_page/js/script.js' %}"></script>
 </body>
 
 </html>

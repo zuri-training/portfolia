@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,8 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../static/css/template.css" />
-    <link rel="stylesheet" href="../static/css/london_broth.css" />
+    <link rel="stylesheet" href="{% static 'template_gallery/css/template.css' %}" />
+    <link rel="stylesheet" href="{% static 'template_gallery/css/london_broth.css' %}" />
   </head>
   <body>
     {% comment %} <header class="template-header"></header> {% endcomment %}
@@ -23,7 +24,7 @@
         <div class="t_flex">
           <div class="template_image">
             <img
-              src="../static/images/template-gallery/London broth.png"
+              src="{% static 'template_gallery/images/template-gallery/London broth.png' %}"
               alt=""
             />
           </div>
@@ -147,7 +148,7 @@
           <div class="single_templa">
             <div class="con">
               <img
-                src="../static/images/template-gallery/McArthur-3.png"
+                src="{% static 'template_gallery/images/template-gallery/McArthur-3.png' %}"
                 alt=""
               />
 
@@ -173,7 +174,7 @@
           <div class="single_templa">
             <div class="con">
               <img
-                src="../static/images/template-gallery/Junemung Frame 1.png"
+                src="{% static 'template_gallery/images/template-gallery/Junemung Frame 1.png' %}"
                 alt=""
               />
 
@@ -198,7 +199,7 @@
           </div>
           <div class="single_templa">
             <div class="con">
-              <img src="../static/images/template-gallery/Artista.png" alt="" />
+              <img src="{% static 'template_gallery/images/template-gallery/Artista.png' %}" alt="" />
 
               <div class="content">
                 <div class="flex justify-content-between align-items-center">
