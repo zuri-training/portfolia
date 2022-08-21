@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolia | Template Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/css/template.css">
+    <link rel="stylesheet" href="{% static 'template_gallery/css/template.css' %}">
 </head>
 <body>
     <header class="template-header"></header>
@@ -40,7 +41,7 @@
     <section class="grid grid-col-2  template-list">
 
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Brown Minimalist Furniture Photo Collage 1.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Brown Minimalist Furniture Photo Collage 1.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Gobble dash</span>
@@ -60,7 +61,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Thumbnail-11.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Thumbnail-11.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Charcoal</span>
@@ -80,7 +81,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Futurist.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Futurist.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Futurist</span>
@@ -101,7 +102,7 @@
         </a>
 
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Rectangle 6.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Rectangle 6.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Augment</span>
@@ -121,7 +122,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/McArthur-2.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur-2.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Carousel</span>
@@ -141,7 +142,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/McArthur-1.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur-1.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>McArthur</span>
@@ -162,7 +163,7 @@
         </a>
 
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/McArthur-3.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur-3.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Evergreen</span>
@@ -182,7 +183,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Junemung Frame 1.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Junemung Frame 1.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Junemung</span>
@@ -202,7 +203,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Artista.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Artista.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Artista</span>
@@ -223,7 +224,7 @@
         </a>
 
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/McArthur.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Gamut Asteria</span>
@@ -243,7 +244,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/London broth.png" alt="template">
+            <img src="{& static 'template_gallery/images/template-gallery/London broth.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Landon Broth</span>
@@ -263,7 +264,7 @@
             </div>
         </a>
         <a href="{% url 'accounts:login' %}" class="template-card">
-            <img src="../static/images/template-gallery/Mysen Image 1.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Mysen Image 1.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Mysen</span>
@@ -294,7 +295,7 @@
     </div>
     <section class="grid grid-col-2  template-list">
         <a href="#" class="template-card">
-            <img src="../static/images/template-gallery/McArthur-5.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur-5.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Drapery</span>
@@ -314,7 +315,7 @@
             </div>
         </a>
         <a href="#" class="template-card">
-            <img src="../static/images/template-gallery/Thumbnail-1.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/Thumbnail-1.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>MasterTouch</span>
@@ -334,7 +335,7 @@
             </div>
         </a>
         <a href="#" class="template-card">
-            <img src="../static/images/template-gallery/McArthur-4.png" alt="template">
+            <img src="{% static 'template_gallery/images/template-gallery/McArthur-4.png' %}" alt="template">
             <div class="meta-data">
                 <div class="flex justify-content-between">
                     <span>Ave Cesaria</span>

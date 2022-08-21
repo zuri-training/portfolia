@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
     <title>Address Inactive</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
             
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="How should we greet you?">
-                <a href="#"><img class="close-icon" src="/static/images/close.svg"></a>
+                <a href="#"><img class="close-icon" src="{% static 'pages/images/close.svg' %}"></a>
               </form>
             <button type="submit"><a class="next" href="website_type.html">Next</a></button>
             <p class="back_to_home"><a href="">Back To Homepage</a></p>  

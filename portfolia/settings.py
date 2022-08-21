@@ -14,9 +14,7 @@ import os
 from ctypes import cast
 from pathlib import Path
 from decouple import config
-import django_heroku
 
-django_heroku.settings(locals())
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -172,9 +170,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'accounts/static/'),
     os.path.join(BASE_DIR, 'dashboard/static/'),
     os.path.join(BASE_DIR, 'landing_page/static/'),
-    os.path.join(BASE_DIR, 'template_gallery/static/')
+    os.path.join(BASE_DIR, 'landing_page/static/'),
+    os.path.join(BASE_DIR, 'template_gallery/static/'),
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #to serve media images in development like pictures
 MEDIA_ROOT = BASE_DIR/'static/images'
@@ -187,8 +187,6 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-"import django_heroku"
-"django_heroku.settings(locals())"
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
@@ -265,3 +263,12 @@ EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'zuriportfoliaproject@gmail.com'
 EMAIL_HOST_PASSWORD = 'gkgftkhllsawsery'
+
+#django-on_heroku dependencies
+# Configure Django App for Heroku.
+import django_on_heroku
+django_on_heroku.settings(locals())
+
+
+import django_on_heroku
+TEST_RUNNER = 'django_on_heroku.HerokuDiscoverRunner'

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,59 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="{% static 'pages/css/home.css' %}">
 </head>
 <body>
     <div id="main-content">
         <div id="first-content">
             <div id="profile">
-                <img src="/static/images/profile.png" alt="profile picture">
+                <img src="{% static 'pages/images/profile.png' %}" alt="profile picture">
                 <p>{{user.email}}</p>
             </div>
             <div>
                 <ul>
                     <li>
-                        <img src="/static/images/home.svg" alt="home">
+                        <img src="{% static 'pages/images/home.svg' %}" alt="home">
                         <a href="{% url 'dashboard' %}">Dashboard</a>
                     </li>
                     <li>
-                        <img src="/static/images/statistics.svg" alt="statistics">
+                        <img src="{% static 'pages/images/statistics.svg' %}" alt="statistics">
                         <a href="">Statistics</a>
                     </li>
                     <li>
-                        <img src="/static/images/mail.svg" alt="mail">
+                        <img src="{% static 'pages/images/mail.svg' %}" alt="mail">
                         <a href="">Inbox</a>
                     </li>
                     <li>
-                        <img src="/static/images/pages.svg" alt="page">
+                        <img src="{% static 'pages/images/pages.svg' %}" alt="page">
                         <a href="">Pages</a>
                     </li>
                     <li>
-                        <img src="/static/images/media.svg" alt="media">
+                        <img src="{% static 'pages/images/media.svg' %}" alt="media">
                         <a href="">Media</a>
                     </li>
                     <li>
-                        <img src="/static/images/post.svg" alt="post">
+                        <img src="{% static 'pages/images/post.svg' %}" alt="post">
                         <a href="">Posts</a>
                     </li>
                     <li>
-                        <img src="/static/images/plugin.svg" alt="plugin">
+                        <img src="{% static 'pages/images/plugin.svg' %}" alt="plugin">
                         <a href="">Plugin</a>
                     </li>
                     <li>
-                        <img src="/static/images/user.svg" alt="user">
+                        <img src="{% static 'pages/images/user.svg' %}" alt="user">
                         <a href="">User</a>
                     </li>
                     <li>
-                        <img src="/static/images/tools.svg" alt="tools">
+                        <img src="{% static 'pages/images/tools.svg' %}" alt="tools">
                         <a href="">Tools</a>
                     </li>
                     <li>
-                        <img src="/static/images/add.svg" alt="add">
+                        <img src="{% static 'pages/images/add.svg' %}" alt="add">
                         <a href="">Add new user</a>
                     </li>
                     <li>
-                        <img src="/static/images/settings.svg" alt="settings">
+                        <img src="{% static 'pages/images/settings.svg' %}" alt="settings">
                         <a href="">Settings</a>
                     </li>
                 </ul>
@@ -77,7 +78,7 @@
                     </nav>
                 </div>
                 <div id="page-content1">
-                    <img src="/static/images/display.png" alt="">
+                    <img src="{% static 'pages/images/display.png' %}" alt="">
                     <div id="side-content">
                         <h1>CREATE YOUR FIRST PORTFOLIO WEBSITE</h1>
                         <p>Select from over a thousand available templates to suit your needs</p>
@@ -89,22 +90,22 @@
             <div id="page-content2">
                 <div id="side-content1">
                     <p>Get help</p>
-                    <p><img src="/static/images/search.svg" alt="search">Search articles</p>
+                    <p><img src="{% static 'pages/images/search.svg' %}" alt="search">Search articles</p>
                     <ul>
                         <li>
-                            <img src="/static/images/article.svg" alt="article">
+                            <img src="{% static 'pages/images/article.svg' %}" alt="article">
                             <a href="">Quick-start Guide</a>
                         </li>
                         <li>
-                            <img src="/static/images/article.svg" alt="article">
+                            <img src="{% static 'pages/images/article.svg' %}" alt="article">
                             <a href="">All About Domains</a>
                         </li>
                         <li>
-                            <img src="/static/images/article.svg" alt="article">
+                            <img src="{% static 'pages/images/article.svg' %}" alt="article">
                             <a href="">Do you need a website, blog or website and blog?</a>
                         </li>
                         <li>
-                            <img src="/static/images/article.svg" alt="article">
+                            <img src="{% static 'pages/images/article.svg' %}" alt="article">
                             <a href="">Uploading custom plugins and themes</a>
                         </li>
                         <li>
@@ -117,23 +118,23 @@
                     <p>Quick links</p>
                     <ul>
                         <li>
-                            <img src="/static/images/bi_laptop.svg" alt="laptop">
+                            <img src="{% static 'pages/images/bi_laptop.svg' %}" alt="laptop">
                             <a href="">Edit site</a>
                         </li>
                         <li>
-                            <img src="/static/images/write.svg" alt="">
+                            <img src="{% static 'pages/images/write.svg' %}" alt="">
                             <a href="">Write blog post</a>
                         </li>
                         <li>
-                            <img src="/static/images/page.svg" alt="">
+                            <img src="{% static 'pages/images/page.svg' %}" alt="">
                             <a href="">Add a page</a>
                         </li>
                         <li>
-                            <img src="/static/images/iconoir_internet.svg" alt="internet">
+                            <img src="{% static 'pages/images/iconoir_internet.svg' %}" alt="internet">
                             <a href="">Add a domain</a>
                         </li>
                         <li>
-                            <img src="/static/images/raphael_plugin.svg" alt="plugin">
+                            <img src="{% static 'pages/images/raphael_plugin.svg' %}" alt="plugin">
                             <a href="">Explore plugins</a>
                         </li>
                     </ul>
@@ -144,8 +145,8 @@
     
     <footer>
         <div class="footer-container1">
-            <img class="logo-white" src="/static/images/logo-white.svg" alt="logo">
-            <h1>English (UK)<img src="/static/images/polygon.svg" alt="polygon"></h1>
+            <img class="logo-white" src="{% static 'pages/images/logo-white.svg' %}" alt="logo">
+            <h1>English (UK)<img src="{% static 'pages/images/polygon.svg' %}" alt="polygon"></h1>
         </div>
         <div id="footer-container"> 
             <div class="footer-container2">
@@ -180,18 +181,18 @@
             <h1>Follow us</h1>
             <ul>
                 <li>
-                    <img class="socials" src="images/twitter.svg" alt="">
+                    <img class="socials" src="{% static 'pages/images/twitter.svg' %}" alt="">
                     <a href="#">Twitter</a>
                 </li>
                 <li>
-                    <img class="socials"src="images/facebook.svg" alt="">
+                    <img class="socials"src="{% static 'pages/images/facebook.svg' %}" alt="">
                     <a href="#">Facebook</a>
                 </li>
                 <li>
-                    <img class="socials"src="images/linkedin.svg" alt="">
+                    <img class="socials"src="{% static 'pages/images/linkedin.svg' %}" alt="">
                     <a href="#">LinkedIn</a></li>
                 <li>
-                    <img class="socials"src="images/instagram.svg" alt="">
+                    <img class="socials"src="{% static 'pages/images/instagram.svg' %}" alt="">
                     <a href="#">Instagram</a>
                 </li>
             </ul>

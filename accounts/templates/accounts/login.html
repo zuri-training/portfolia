@@ -8,19 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="/static/css/login.css" type= "text/css">
+    <link rel="stylesheet" href="{% static 'accounts/css/login.css' %}" type= "text/css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <header>
         <div class="nav">
-            <a href="{% url 'index' %}" class="back-link"><img src="/static/images/back_icon.svg" alt="back_icon"></a>
+            <a href="{% url 'index' %}" class="back-link"><img src="{% static 'accounts/images/back_icon.svg'%}" alt="back_icon"></a>
             <a href="{% url 'accounts:signup' %}" class="signup-link">Create Account</a>
         </div>
     </header>
     <main>
         <div class="logo">
-            <img src="/static/images/logo_1.svg" alt="portfolia logo">
+            <img src="{% static 'accounts/images/logo_1.svg' %}" alt="portfolia logo">
         </div>
 
         <h3 id="header">Log into Portfolia</h3>
@@ -54,11 +54,11 @@
 
             <div class="btn-container">
                 <div class="gbtn-container">
-                    <button class="google-btn" ><img src="/static/images/google_icon.svg" alt="google-icon"><a href="{% provider_login_url 'google' method = 'oauth2' %}">Continue with Google</a></button>
+                    <button class="google-btn" ><img src="{% static 'accounts/images/google_icon.svg' %}" alt="google-icon"><a href="{% provider_login_url 'google' method = 'oauth2' %}">Continue with Google</a></button>
                 </div>
             
                 <div class="fbtn-container">
-                    <button class="facebook-btn"><img src="/static/images/facebook_icon.svg" alt="facebook-icon"><a href="{% provider_login_url 'facebook' method = 'js_sdk' %}">Continue with Facebook</a></button>
+                    <button class="facebook-btn"><img src="{% static 'accounts/images/facebook_icon.svg' %}" alt="facebook-icon"><a href="{% provider_login_url 'facebook' method = 'js_sdk' %}">Continue with Facebook</a></button>
                 </div>
             </div>
             

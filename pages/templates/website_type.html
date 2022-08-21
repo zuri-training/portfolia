@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
     <title>Document</title>
     <script src="function.js" defer></script>
 </head>
@@ -52,7 +53,7 @@
             <form class="search-container">
                 <!-- <a href="#"><img class="search-icon" src="images/search.svg"></a> -->
                 <input type="search" id="search-bar" placeholder="Search for website?">
-                <a href="#"><img class="close-icon" src="static/images/close.svg"></a>
+                <a href="#"><img class="close-icon" src="{% static 'pages/images/close.svg' %}"></a>
             </form>
             <h3 class="common-search">Commonly search</h3>
             <div id="div-container">
