@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolia | Template Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{% static 'template_gallery/css/template.css' %}" />
+    <link rel="stylesheet" href="{% static 'template_gallery/css/london_broth.css' %}" />
+  </head>
+  <body>
+    {% comment %} <header class="template-header"></header> {% endcomment %}
+    <main class="main-wrapper">
+      <section class="template_area">
+        <div class="t_flex">
+          <div class="template_image">
+            <img
+              src="{% static 'template_gallery/images/template-gallery/Junemung Frame 1.png' %}"
+              alt=""
+            />
+          </div>
+          <div class="template_about">
+            <h4>Junemung</h4>
+            <p>
+              The London broth is ideal for for businesses that are in search of
+              customers and wish to showcase their work and services at a
+              glance.
+            </p>
+            <p>
+              It is a fully responsive template with many plugjs that go
+              alongside. London Broth also renders layouts and blocks more
+              beautiful.
+            </p>
+
+            <div class="btn_actions">
+              <button class="preview_btn">Preview</button>
+              <button class="apply_btn">Apply</button>
+            </div>
+            <div class="n_actions">
+              <button class="save_btn">Save</button>
+              <div class="stars">
+                <span>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="template_features">
+        <div class="wrapper">
+          <div class="single-feature">
+            <div class="feature_icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="feature_content">
+              <h3>Feature 1</h3>
+              <p>
+                The London broth is ideal for for businesses that are in search
+                of customers and wish to showcase their work and services at a
+                glance.
+              </p>
+              <p>
+                It is a fully responsive template with many plugjs that go
+                alongside. London Broth also renders layouts and blocks more
+                beautiful. There must be some sort of copy here that would want
+                to make you o wild.
+              </p>
+            </div>
+          </div>
+          <div class="single-feature">
+            <div class="feature_icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="feature_content">
+              <h3>Feature 2</h3>
+              <p>
+                The London broth is ideal for for businesses that are in search
+                of customers and wish to showcase their work and services at a
+                glance.
+              </p>
+              <p>
+                It is a fully responsive template with many plugjs that go
+                alongside. London Broth also renders layouts and blocks more
+                beautiful. There must be some sort of copy here that would want
+                to make you o wild.
+              </p>
+            </div>
+          </div>
+          <div class="single-feature">
+            <div class="feature_icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="feature_content">
+              <h3>Feature 3</h3>
+              <p>
+                The London broth is ideal for for businesses that are in search
+                of customers and wish to showcase their work and services at a
+                glance.
+              </p>
+              <p>
+                It is a fully responsive template with many plugjs that go
+                alongside. London Broth also renders layouts and blocks more
+                beautiful. There must be some sort of copy here that would want
+                to make you o wild.
+              </p>
+            </div>
+          </div>
+          <div class="single-feature">
+            <div class="feature_icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <div class="feature_content">
+              <h3>Feature 4</h3>
+              <p>
+                The London broth is ideal for for businesses that are in search
+                of customers and wish to showcase their work and services at a
+                glance.
+              </p>
+              <p>
+                It is a fully responsive template with many plugjs that go
+                alongside. London Broth also renders layouts and blocks more
+                beautiful. There must be some sort of copy here that would want
+                to make you o wild.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="more_from_author">
+        <h3>More from this author</h3>
+        <div class="wrapper">
+          <div class="single_templa">
+            <div class="con">
+              <img
+                src="{% static 'template_gallery/images/template-gallery/Mysen Image 1.png' %}"
+                alt=""
+              />
+
+              <div class="content">
+                <div class="flex justify-content-between align-items-center">
+                  <h3>Mysen</h3>
+                  <h5>Free</h5>
+                </div>
+                <p>by kitehanger</p>
+                <div
+                  class="flex justify-content-between align-items-center actions"
+                >
+                  <h4>Apply</h4>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single_templa">
+            <div class="con">
+              <img
+                src="{% static 'template_gallery/images/template-gallery/Junemung Frame 1.png' %}"
+                alt=""
+              />
+
+              <div class="content">
+                <div class="flex justify-content-between align-items-center">
+                  <h3>Junemung</h3>
+                  <h5>Free</h5>
+                </div>
+                <p>by Carl Jung</p>
+                <div
+                  class="flex justify-content-between align-items-center actions"
+                >
+                  <h4>Apply</h4>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single_templa">
+            <div class="con">
+              <img src="{% static 'template_gallery/images/template-gallery/Artista.png' %}" alt="" />
+
+              <div class="content">
+                <div class="flex justify-content-between align-items-center">
+                  <h3>Artista</h3>
+                  <h5>Free</h5>
+                </div>
+                <p>by McFerrin Eal</p>
+                <div
+                  class="flex justify-content-between align-items-center actions"
+                >
+                  <h4>Apply</h4>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
