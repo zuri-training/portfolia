@@ -7,3 +7,6 @@ def template_gallery_view(request):
 
 def template_london_both(request):
     return render(request, 'london_broth.html')
+    
+def template_junemung(request):
+    return render(request, 'junemung.html')
