@@ -1,1 +1,1 @@
-web: gunicorn porfolia.wsgi --log-file -
+web: gunicorn portfolia.wsgi --log-file -
