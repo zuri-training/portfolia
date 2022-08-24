@@ -1,2 +1,1 @@
-web: gunicorn porfolia.wsgi --log-file -
-release: python manage.py migrate
+web: gunicorn portfolia.wsgi --log-file -
