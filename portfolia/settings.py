@@ -194,7 +194,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -250,11 +250,12 @@ ACCOUNT_USERNAME_REQUIRED = False
 
 
 
-LOGIN_REDIRECT_URL = 'pages/home'
+LOGIN_REDIRECT_URL = '/pages/home'
 LOGOUT_REDIRECT_URL = '/accounts/login'
 
 #55442352359-jhhse5q68f6r49tr1asuf52oslq8n5mh.apps.googleusercontent.com
 #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
+
 
 #SMTP Configuration
 
