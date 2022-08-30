@@ -13,15 +13,15 @@
         <img class="logo" src="{% static 'pages/images/logo.svg' %}" alt="logo"/>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'index'%}">Home</a></li>
                 <li><a href="#">Explore</a><img class="down" src="{% static 'pages/images/down.svg' %}" alt="down"></li>
                 <li><a href="#">Features</a><img class="down" src="{% static 'pages/images/down.svg' %}" alt="down"></li>
                 <li><a href="#">Resources</a><img class="down" src="{% static 'pages/images/down.svg' %}" alt="down"></li>
             </ul>
         </nav>
         <div class="sign-up">
-            <h1><a href="#">Sign in</a></h1>
-            <h1><a href="#">Get started</a></h1>
+            <h1><a href="{% url 'accounts:login' %}">Sign in</a></h1>
+            <h1><a href="{% url 'accounts:signup' %}">Get started</a></h1>
         </div>
     </header>
     <main>

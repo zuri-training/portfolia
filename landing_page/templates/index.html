@@ -98,7 +98,7 @@
               and
               animations plus you don't have to write a line of code.</p>
             <p class="text-left">
-              <a href="#" class="pfl-btn pfl-btn-link">Build your site</a>
+              <a href="{% url 'documentation:welcome' %}" class="pfl-btn pfl-btn-link">Build your site</a>
             </p>
           </div>
           <div class="col-12 col-lg-5 col-md-12 img-hero">
@@ -294,7 +294,7 @@
             </div>
           </div>
           <p class="text-center">
-            <a href="#" class="pfl-btn pfl-btn-link">Build your site</a>
+            <a href="{% url 'documentation:welcome' %}" class="pfl-btn pfl-btn-link">Build your site</a>
           </p>
         </div>
         <div class="option-layouts">
@@ -458,7 +458,7 @@
               </div>
             </div>
             <p class="text-left">
-              <a href="#" class="pfl-btn pfl-btn-link">Build your site</a>
+              <a href="{% url 'documentation:welcome' %}" class="pfl-btn pfl-btn-link">Build your site</a>
             </p>
           </div>
         </div>
@@ -471,6 +471,7 @@
           <p class="newsletter__subtitle">Sign up for weekly Newsletter as well as once in a time offers.</p>
           <form action="" class="newletter-content" id="newslatter-form">
             <div class="newsletter__input mb-3">
+              {% csrf_token %}
               <input type="email" class="form-input" id="input-email" placeholder="email">
             </div>
             <button type="submit" class="pfl-btn pfl-btn-newslatter">Sign me up for PortFolia newsletter</button>
@@ -519,7 +520,7 @@
           <h3>About PortFolia</h3>
           <ul>
             <li>
-              <a href="#" class="footer__link">About us</a>
+              <a href="{% url 'pages:about' %}" class="footer__link">About us</a>
             </li>
             <li>
               <a href="#" class="footer__link">Career at Portfolia</a>

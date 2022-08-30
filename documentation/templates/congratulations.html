@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'documentation/css/styles.css' %}">
     <title>Document</title>
     <script src="function.js" defer></script>
 </head>
@@ -23,55 +23,33 @@
         <div class="my_main">
             <div class="back-progress">
                 <div id="go_back">
-                    <a class="go_back" href="website_type.html">Go back</a>   
+                    <a class="go_back" href="{% url 'documentation:your_role' %}">Go back</a>   
                 </div>
                 <div>
                     <svg width="308" height="32" viewBox="0 0 308 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="36.5" y1="15.5" x2="87.5" y2="15.5" stroke="#34C759" stroke-linecap="round"/>
-                        <line x1="128.5" y1="15.5" x2="179.5" y2="15.5" stroke="#34C759" stroke-linecap="round"/>
+                        <line x1="128.5" y1="15.5" x2="179.5" y2="15.5" stroke="#252529" stroke-opacity="0.7" stroke-linecap="round"/>
                         <line x1="220.5" y1="15.5" x2="271.5" y2="15.5" stroke="#252529" stroke-opacity="0.7" stroke-linecap="round"/>
                         <circle cx="16" cy="16" r="16" fill="#34C759"/>
                         <path d="M21.3346 12L14.0013 19.3333L10.668 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <circle cx="108" cy="16" r="16" fill="#34C759"/>
                         <path d="M113.335 12L106.001 19.3333L102.668 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="200" cy="16" r="16" fill="#252529"/>
-                        <path d="M196.08 13.262C196.164 12.158 196.59 11.294 197.358 10.67C198.126 10.046 199.122 9.734 200.346 9.734C201.162 9.734 201.864 9.884 202.452 10.184C203.052 10.472 203.502 10.868 203.802 11.372C204.114 11.876 204.27 12.446 204.27 13.082C204.27 13.826 204.054 14.468 203.622 15.008C203.202 15.548 202.65 15.896 201.966 16.052V16.142C202.746 16.334 203.364 16.712 203.82 17.276C204.276 17.84 204.504 18.578 204.504 19.49C204.504 20.174 204.348 20.792 204.036 21.344C203.724 21.884 203.256 22.31 202.632 22.622C202.008 22.934 201.258 23.09 200.382 23.09C199.11 23.09 198.066 22.76 197.25 22.1C196.434 21.428 195.978 20.48 195.882 19.256H197.466C197.55 19.976 197.844 20.564 198.348 21.02C198.852 21.476 199.524 21.704 200.364 21.704C201.204 21.704 201.84 21.488 202.272 21.056C202.716 20.612 202.938 20.042 202.938 19.346C202.938 18.446 202.638 17.798 202.038 17.402C201.438 17.006 200.532 16.808 199.32 16.808H198.906V15.44H199.338C200.442 15.428 201.276 15.248 201.84 14.9C202.404 14.54 202.686 13.988 202.686 13.244C202.686 12.608 202.476 12.098 202.056 11.714C201.648 11.33 201.06 11.138 200.292 11.138C199.548 11.138 198.948 11.33 198.492 11.714C198.036 12.098 197.766 12.614 197.682 13.262H196.08Z" fill="#F2F2F2"/>
-                        <circle cx="292" cy="16" r="16" fill="#252529"/>
-                        <path d="M286.72 20.102V18.86L293.038 10.112H295V18.68H296.8V20.102H295V23H293.38V20.102H286.72ZM293.452 11.822L288.61 18.68H293.452V11.822Z" fill="#F2F2F2"/>
+                        <circle cx="200" cy="16" r="16" fill="#34C759"/>
+                        <path d="M205.335 12L198.001 19.3333L194.668 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="292" cy="16" r="16" fill="#34C759"/>
+                        <path d="M297.335 12L290.001 19.3333L286.668 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                         
                 </div>
 
             </div>
-           
+            
                 
-            <h1>
-                Choose a name for your website?
+            <h1 class="congrats">
+                Congratulations You're in.
             </h1>
-            <p class="stamp">
-                So people can find your website easily.
-            </p>
-            
-            <form class="search-container">
-                <!-- <a href="#"><img class="search-icon" src="images/search.svg"></a> -->
-                <input type="search" id="search-bar" placeholder="Search for website?">
-                <a href="#"><img class="close-icon" src="{% static 'pages/images/close.svg' %}"></a>
-            </form>
-            <!-- <h3 class="common-search">Commonly search</h3> -->
-            <div id="containerDiv">
-                <!-- <h3>commonly search</h3> -->
-                
-                <input id="websiteName" type="text" onclick="colorchange();" placeholder="websitename.com">
-                <div class="myDiv">
-                </div>
-                
-                
-            </div>
-
-            
-
-            <button type="submit"><a class="next" href="your_role.html">Next</a></button>
-            <p class="backHome"><a href="#">Back To Homepage</a></p>  
+            <button class="btn" type="submit"><a class="next" href="{% url 'template_gallery:template_gallery' %}">Start Building</a></button>
+        
         </div>
     </main>
 </body>

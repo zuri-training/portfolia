@@ -227,6 +227,11 @@ input#search-bar {
     padding-top: 8%;
 }
 
+.back_to_home a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
 .backHome{
     font-weight: 500;
     padding-top: 8%;
@@ -373,3 +378,4 @@ input[type="radio"] {
     border-radius: 8px;
     background-color: var(--light-gray);
 }
+
