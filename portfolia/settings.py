@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'template_gallery',
     'pages',
+    'documentation',
 
     # Third-party apps
     'django_extensions',

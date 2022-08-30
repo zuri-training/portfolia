@@ -27,6 +27,7 @@ urlpatterns = [
     path('', include('dashboard.urls')),
     path('', include('template_gallery.urls')),
     path('pages/', include('pages.urls')),
+    path('documentation/', include('documentation.urls')),
 
 
 ]
