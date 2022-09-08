@@ -30,7 +30,7 @@
             {% for message in messages %}
                 <li class="{{ message.tags }}">
                     {{ message|safe }}
-                    <a href="{% url 'accounts:signup' %}" class="close">x</a>
+                    <a href="{% url 'accounts:login' %}" class="close">x</a>
                 </li>
             {% endfor %}
         </ul>
@@ -42,7 +42,7 @@
                 <label for="email" >Email</label><br>
                 <input type="email" placeholder="name@email.com" name ="email" id="email" required><br>
 
-                <label for="password" >First Name</label><br>
+                <label for="password" >Password</label><br>
                 <input type="password" placeholder="Password" name ="password" id="password" required><br>
             
                 <input type="submit" value="Log In">
